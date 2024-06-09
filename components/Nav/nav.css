@@ -1,0 +1,17 @@
+
+
+  .transleteNav {
+    @apply -translate-y-full transition-transform;
+  }
+  
+  .transleteNavUp {
+    @apply  transform-none transition-transform;
+  }
+
+.Mui-focusVisible {
+  outline: none!important;
+}
+
+.drawer_custom {
+  --Drawer-verticalSize: "300px" !important;
+}

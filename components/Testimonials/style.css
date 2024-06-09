@@ -1,0 +1,3 @@
+.custom_dots li button:before{
+    @apply  !text-white !text-[10px];
+}

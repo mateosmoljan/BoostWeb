@@ -13,51 +13,50 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Crypto.ai - powerfull ai",
+  title: "ZkSync.ai - Powering the Future with AI",
   description:
-    "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
+    "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
   icons: {
     icon: "/assets/images/logo.png",
   },
   generator: "Next.js",
-  applicationName: "Boost Web",
+  applicationName: "ZkSync.ai",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Boost Web",
-    "website design",
-    "website development",
-    "website maintenance",
-    "software development",
-    "software design",
-    "professional website services",
+    "ZkSync.ai",
+    "cryptocurrency platform",
+    "AI-powered solutions",
+    "crypto innovation",
+    "digital finance",
+    "AI-driven technology",
   ],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
-    title: "Boost Web - Professional Website Design & Maintenance Services",
+    title: "ZkSync.ai - Powering the Future with AI",
     description:
-      "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
-    url: "https://boostweb.io",
+      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
+    url: "https://zksync.ai",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Boost Web - Professional Website Design & Maintenance Services",
+    title: "ZkSync.ai - Powering the Future with AI",
     description:
-      "Boost Web offers professional website design, software development and maintenance services. Create stunning websites with personalized service and modern amenities.",
+      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
     images: [
       {
         url: "/assets/images/logo.png",
-        alt: "Boost Web",
+        alt: "ZkSync.ai",
       },
     ],
   },
   authors: [
-    { name: "Boost Web" },
-    { name: "Boost Web", url: "https://boostweb.io" },
+    { name: "ZkSync.ai" },
+    { name: "ZkSync.ai", url: "https://zksync.ai" },
   ],
-  creator: "Boost Web",
-  publisher: "Boost Web",
+  creator: "ZkSync.ai",
+  publisher: "ZkSync.ai",
   formatDetection: {
     email: false,
     address: false,

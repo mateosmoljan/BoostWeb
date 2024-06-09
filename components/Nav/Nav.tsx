@@ -94,7 +94,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden lg:flex">
-            <Link href="#contact" className="btn ml-4 !py-2.5">
+            <Link href="/build" className="btn ml-4 !py-2.5">
               Build
             </Link>
           </div>

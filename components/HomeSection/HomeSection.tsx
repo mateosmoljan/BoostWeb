@@ -21,7 +21,7 @@ function HomeSection() {
         <div className="flex justify-center gap-8 relative flex-col sm:flex-row w-full  items-center">
           <button className="custom_gradient_box relative p-2 w-[90%] sm:w-auto">
             <Link
-              href="#"
+              href="/build"
               className=" btn z-10 flex gap-2 relative items-center justify-center text-[14px] !text-center leading-8 md:text-lg"
             >
               Start Building <FaArrowRight />
@@ -29,7 +29,7 @@ function HomeSection() {
           </button>
           <button className="w-[90%] sm:w-auto">
             <Link
-              href="#"
+              href="/explore"
               className="btn flex gap-2 items-center border-white border-2 justify-center !bg-transparent !text-white text-[14px] leading-8 md:text-lg"
             >
               Explore <FaArrowRight />

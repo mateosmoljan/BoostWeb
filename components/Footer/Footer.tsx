@@ -31,18 +31,19 @@ function Footer() {
                     Home
                   </a>
                 </li>
+
                 <li>
-                  <a href="/#references" className="hover:underline">
-                    Invest
-                  </a>
-                </li>
-                <li>
-                  <a href="/pricing" className="hover:underline">
+                  <a href="/team" className="hover:underline">
                     Team
                   </a>
                 </li>
                 <li>
-                  <a href="#faq" className="hover:underline">
+                  <a href="/presale" className="hover:underline">
+                    Presale
+                  </a>
+                </li>
+                <li>
+                  <a href="/build" className="hover:underline">
                     Build
                   </a>
                 </li>
@@ -57,12 +58,12 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/#references" className="hover:underline">
+                  <a href="/build" className="hover:underline">
                     Build
                   </a>
                 </li>
                 <li>
-                  <a href="/pricing" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Careers
                   </a>
                 </li>

@@ -22,6 +22,7 @@ function Footer() {
             <div className="flex gap-4 ">
               {socialsData.data.map((item, index) => (
                 <a
+                  key={index}
                   href={item.path}
                   target="_blank"
                   rel="noreferrer"

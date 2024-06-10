@@ -1,3 +1,4 @@
+import { socialsData } from "@/lib/socialsData";
 import Image from "next/image";
 
 function Footer() {
@@ -14,10 +15,22 @@ function Footer() {
                 height={500}
               />
             </div>
-            <p className="text-sm max-w-[300px]">
+            <p className="text-sm max-w-[300px] mb-5">
               A good design is not only aesthetically pleasing, but also
               functional. It should be able to solve the problem{" "}
             </p>
+            <div className="flex gap-4 ">
+              {socialsData.data.map((item, index) => (
+                <a
+                  href={item.path}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
             <div>

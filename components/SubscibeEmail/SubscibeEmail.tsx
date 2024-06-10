@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function SubscibeEmail() {
   return (
-    <section className="w-full">
+    <section className="w-full absolute -bottom-44 ">
       <div className="container bg-gradient-blue px-8 py-10 sm:p-16 rounded-3xl relative flex ">
         <div className="w-[90%] sm:w-1/2 z-10">
           <h2 className="!text-3xl mb-8 !text-left !leading-10">

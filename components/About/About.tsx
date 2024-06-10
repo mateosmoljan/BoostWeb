@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function About() {
   return (
-    <section className="w-full py-52">
+    <section className="w-full py-32">
       <div className="container flex flex-col-reverse md:flex-row ">
         <div className="flex flex-col gap-10 w-full md:w-1/2">
           <h2 className="!text-left">

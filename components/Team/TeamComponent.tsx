@@ -8,7 +8,7 @@ function TeamComponent() {
       {TeamData.data.map((item, index) => (
         <div
           key={index}
-          className="p-4 flex flex-col items-center justify-between gap-10 bg-white_hover rounded-3xl"
+          className="p-4 py-8 flex flex-col items-center justify-between gap-10 bg-white_hover rounded-3xl"
         >
           <div className="w-[200px] h-[200px] rounded-3xl">
             <Image

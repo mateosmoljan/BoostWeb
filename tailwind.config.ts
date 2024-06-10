@@ -30,6 +30,8 @@ const config: Config = {
           "linear-gradient(270deg,#0c45e7 42.92%,#00f4fb 84.41%)",
         "gradient-blue-linear-right":
           "linear-gradient(90deg,#0c45e7 42.92%,#00f4fb 84.41%)",
+        "gradient-fade":
+          "linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.08))",
       },
       fontWeight: {
         titleBold: "var(--titleBold)",

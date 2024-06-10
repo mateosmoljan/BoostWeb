@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function About() {
   return (
-    <section className="w-full py-32">
+    <section className="w-full py-10">
       <div className="container flex flex-col-reverse md:flex-row ">
         <div className="flex flex-col gap-10 w-full md:w-1/2">
           <h2 className="!text-left">
@@ -30,7 +30,7 @@ function About() {
             alt="Logo"
             width={300}
             height={419}
-            className=" m-auto w-1/3 md:w-auto absolute md:relative md:right-auto right-0"
+            className=" m-auto w-1/3 md:w-[250px] absolute object-cover md:relative md:right-auto right-0 "
           />
           <div className="w-[300px] h-[300px] bg-gradient-blue absolute top-0 blur-3xl -z-20 opacity-10 md:opacity-100" />
           <div className="w-[300px] h-[300px] bg-gradient-blue absolute -bottom-40 blur-3xl -z-20" />

@@ -30,11 +30,11 @@ function ProjectStats() {
               <span className="text-gradient">OpenAI</span>
             </h2>
           </div>
-          <div className="flex divide-x divide-gray-200 w-full justify-between">
+          <div className="grid gap-4 md:grid-0 grid-cols-2 md:flex md:divide-x divide-gray-200 w-full justify-between">
             {stats.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center gap-4 w-1/2 md:w-1/4"
+                className="flex flex-col items-center gap-4 w-full md:w-1/4"
               >
                 <p>{item.title}</p>
                 <h2 className="!text-3xl">{item.value}</h2>

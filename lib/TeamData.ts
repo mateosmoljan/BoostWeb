@@ -11,23 +11,27 @@ type DataObject = {
 export const TeamData: DataObject = {
   data: [
     {
-      path: "/assets/images/team1.png",
+      path: "/assets/images/team1.webp",
       name: "Alex Uzun",
       role: "CEO and Chief Developer",
     },
-    { path: "/assets/images/team2.png", name: "Josh Buck", role: "Co-founder" },
     {
-      path: "/assets/images/team3.png",
+      path: "/assets/images/team2.jpeg",
+      name: "Josh Buck",
+      role: "Co-founder",
+    },
+    {
+      path: "/assets/images/team3.jpg",
       name: "Jacob Sorkin",
       role: "Head of Crypto",
     },
     {
-      path: "/assets/images/team2.png",
+      path: "/assets/images/team4.png",
       name: "Jasmeet Singh Sandhu",
       role: "Chief Science Officer",
     },
     {
-      path: "/assets/images/team3.png",
+      path: "/assets/images/team5.png",
       name: "Dr. Alexey Potapov",
       role: "Chief AGI Officer",
     },

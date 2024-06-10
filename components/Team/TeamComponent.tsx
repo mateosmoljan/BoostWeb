@@ -10,12 +10,27 @@ function TeamComponent() {
           key={index}
           className="p-4 flex flex-col items-center justify-between gap-10 bg-white_hover rounded-3xl"
         >
-          <div>
-            <Image src={item.path} alt={item.name} width={200} height={200} />
+          <div className="w-[200px] h-[200px] rounded-3xl">
+            <Image
+              src={item.path}
+              alt={item.name}
+              width={200}
+              height={200}
+              className="object-cover h-full w-full rounded-3xl"
+            />
           </div>
           <div className="flex justify-center gap-4 flex-col text-center">
-            <h3>{item.name}</h3>
+            <h1 className="text-xl">{item.name}</h1>
             <p>{item.role}</p>
+            <p className="flex flex-col gap-1 items-center text-sm">
+              Backed By
+              <Image
+                src="/assets/images/logo.png"
+                alt="Logo"
+                width={30}
+                height={30}
+              />
+            </p>
           </div>
         </div>
       ))}

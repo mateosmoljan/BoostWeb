@@ -19,9 +19,9 @@ function TeamComponent() {
               className="object-cover h-full w-full rounded-3xl"
             />
           </div>
-          <div className="flex justify-center gap-4 flex-col text-center">
+          <div className="flex justify-center flex-col text-center">
             <h1 className="text-2xl my-2.5 text-secondary">{item.name}</h1>
-            <p className="text-lg my-1 text-white">{item.role}</p>
+            <p className="text-lg my-1 mb-2 text-white">{item.role}</p>
             <p className="flex flex-col gap-1 items-center text-base">
               Backed By
               <div className="flex gap-1 items-center text-base">

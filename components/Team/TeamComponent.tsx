@@ -8,9 +8,9 @@ function TeamComponent() {
       {TeamData.data.map((item, index) => (
         <div
           key={index}
-          className="p-4 py-8 flex flex-col items-center justify-between gap-10 bg-white_hover rounded-3xl"
+          className="p-4 py-8 flex flex-col items-center justify-between bg-white_hover rounded-3xl"
         >
-          <div className="w-[200px] h-[200px] rounded-3xl">
+          <div className="w-[200px] h-[200px] rounded-3xl mb-4">
             <Image
               src={item.path}
               alt={item.name}
@@ -20,16 +20,19 @@ function TeamComponent() {
             />
           </div>
           <div className="flex justify-center gap-4 flex-col text-center">
-            <h1 className="text-xl">{item.name}</h1>
-            <p>{item.role}</p>
-            <p className="flex flex-col gap-1 items-center text-sm">
+            <h1 className="text-2xl my-2.5 text-secondary">{item.name}</h1>
+            <p className="text-lg my-1 text-white">{item.role}</p>
+            <p className="flex flex-col gap-1 items-center text-base">
               Backed By
-              <Image
-                src="/assets/images/logo.png"
-                alt="Logo"
-                width={30}
-                height={30}
-              />
+              <div className="flex gap-1 items-center text-base">
+                {item.backed_by}
+                <Image
+                  src={item.backed_image}
+                  alt={item.name}
+                  width={40}
+                  height={40}
+                />
+              </div>
             </p>
           </div>
         </div>

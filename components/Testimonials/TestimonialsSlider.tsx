@@ -39,7 +39,7 @@ function TestimonialsSlider() {
                 />
               </div>
               <div className="flex flex-col item-center justify-center gap-8">
-                <div dangerouslySetInnerHTML={{ __html: item.des }} />
+                <p>{item.des}</p>
                 <div className="flex flex-col gap-2 uppercase">
                   <span>{item.name}</span>
                   <p className="text-sm">{item.industry}</p>

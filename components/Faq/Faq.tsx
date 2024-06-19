@@ -45,7 +45,7 @@ export default function Faq() {
             {item.title}
           </AccordionSummary>
           <AccordionDetails sx={{ color: "#9E9E9E", paddingTop: "20px" }}>
-            {item.des}
+            <div dangerouslySetInnerHTML={{ __html: item.des }} />
           </AccordionDetails>
         </Accordion>
       ))}

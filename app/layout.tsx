@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import Navbar from "@/components/Nav/Nav";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import Footer from "@/components/Footer/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalitics";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -13,50 +14,52 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ZkSync.ai - Powering the Future with AI",
+  title: "Boost Web - Empowering Your Online Presence",
   description:
-    "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
+    "Discover Boost Web, your trusted partner for website maintenance, design, development, SEO, and SAAS solutions. From booking systems to online schools and crypto projects, we transform your digital vision into reality.",
   icons: {
     icon: "/assets/images/logo.png",
   },
   generator: "Next.js",
-  applicationName: "ZkSync.ai",
+  applicationName: "Boost Web",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "ZkSync.ai",
-    "cryptocurrency platform",
-    "AI-powered solutions",
-    "crypto innovation",
-    "digital finance",
-    "AI-driven technology",
+    "Boost Web",
+    "website maintenance",
+    "website design",
+    "SEO services",
+    "SAAS development",
+    "booking systems",
+    "online school",
+    "crypto projects",
   ],
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
-    title: "ZkSync.ai - Powering the Future with AI",
+    title: "Boost Web - Empowering Your Online Presence",
     description:
-      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
-    url: "https://zksync.ai",
+      "Discover Boost Web, your trusted partner for website maintenance, design, development, SEO, and SAAS solutions. From booking systems to online schools and crypto projects, we transform your digital vision into reality.",
+    url: "https://www.boostweb.io",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZkSync.ai - Powering the Future with AI",
+    title: "Boost Web - Empowering Your Online Presence",
     description:
-      "Discover the power of ZkSync.ai, the ultimate platform fueled by AI innovation, reshaping the digital finance landscape. Start building tomorrow's crypto solutions today.",
+      "Discover Boost Web, your trusted partner for website maintenance, design, development, SEO, and SAAS solutions. From booking systems to online schools and crypto projects, we transform your digital vision into reality.",
     images: [
       {
         url: "/assets/images/logo.png",
-        alt: "ZkSync.ai",
+        alt: "Boost Web",
       },
     ],
   },
   authors: [
-    { name: "ZkSync.ai" },
-    { name: "ZkSync.ai", url: "https://zksync.ai" },
+    { name: "Boost Web" },
+    { name: "Boost Web", url: "https://www.boostweb.io" },
   ],
-  creator: "ZkSync.ai",
-  publisher: "ZkSync.ai",
+  creator: "Boost Web",
+  publisher: "Boost Web",
   formatDetection: {
     email: false,
     address: false,
@@ -73,7 +76,8 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang={locale}>
+      <html lang="en">
+        <GoogleAnalytics />
         <body className={`${poppins.variable} font-poppins`}>
           <AppRouterCacheProvider>
             <Navbar />

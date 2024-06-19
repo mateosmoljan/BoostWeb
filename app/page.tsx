@@ -3,7 +3,7 @@ import BackedBy from "@/components/BackedBy/BackedBy";
 import FaqSection from "@/components/Faq/FaqSection";
 import HomeSection from "@/components/HomeSection/HomeSection";
 import ProjectStats from "@/components/ProjectStats/ProjectStats";
-import SubscibeEmail from "@/components/SubscibeEmail/SubscibeEmail";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <HomeSection />
       <ProjectStats />
       <About />
+      <Testimonials />
       <FaqSection />
       <BackedBy />
     </main>

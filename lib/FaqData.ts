@@ -12,65 +12,94 @@ export const FaqData: DataObject = {
   data: [
     {
       panelNumber: 1,
-      title: "What is ZkSync.ai?",
-      des: `ZkSync.ai is a cutting-edge AI project centered around the ZkSync Era,
-          offering streamlined solutions for developers diving into Zk
-          technology. Our platform simplifies the development process with
-          efficient tools tailored for ZkSync developers, ensuring smooth
-          integration and rapid deployment of decentralized applications. With a
-          user-friendly ZK-EVM wallet and integrated AI tool functionality,
-          we're dedicated to providing seamless experiences for users
-          interacting with Zk-powered applications. Stay tuned as we pave the
-          way for even greater innovation, with plans to launch the ZkAI
-          blockchain, our very own L2 blockchain with governance token
-          accessible to ZkSync.ai token holders.`,
+      title: "How much does it cost to create a website?",
+      des: `The cost of creating a website varies depending on the features and complexity of the project, as well as the number of pages, multilingual options, number of galleries, and many other factors.`,
     },
     {
       panelNumber: 2,
-      title: "How does ZkSync.ai differ from other cryptocurrencies?",
-      des: `ZkSync.ai stands out by providing a unique ecosytem with EVM
-          interoperability, a tokenized AI powered marketplace and AI solutions
-          catering to both individual investors and institutions.`,
+      title: "How long does it take to create a website?",
+      des: `The time it takes to create a website varies depending on the complexity of the project. On average, building a simple website can take anywhere from a few days to a few weeks, while more complex projects can take longer.`,
     },
     {
       panelNumber: 3,
       title: "What are the benefits of joining the ZkSync.ai presale?",
-      des: `Participating in the ZkSync.ai presale provides an exclusive
-          opportunity to purchase ZKAI tokens at a reduced rate, ahead of the
-          general market launch. This limited presale event offers the potential
-          for significant financial gains as the platform expands and matures.`,
+      des: `<span className="font-titleBold">Goal of the website:</span> What is
+          the purpose of the website and what is intended to be achieved through
+          it. <br />
+          <br />
+          <span className="font-titleBold">Target audience:</span> Who is the
+          target audience of the website and what are their needs. <br />
+          <br />
+          <span className="font-titleBold">Content:</span> What content will be
+          displayed on the page, including texts, images, and video content.{" "}
+          <br />
+          <br />
+          <span className="font-titleBold">Functionality:</span> What
+          functionalities are needed on the page, such as contact forms,
+          e-commerce, or social media integrations. <br />
+          <br />
+          <span className="font-titleBold">Design:</span> General style and
+          colors to be used on the page, as well as other specific design
+          requirements. <br />
+          <br />
+          <span className="font-titleBold">Budget:</span> Available budget for
+          the website development. <br />
+          <br />
+          <span className="font-titleBold">Deadlines:</span> Deadlines for
+          project completion.`,
     },
     {
       panelNumber: 4,
-      title: `What is the difference between ZkSync.ai on ZkSync and the ZKAI
-          Blockchain?`,
-      des: `ZkSync.ai on ZkSync and the ZKAI Blockchain signify pivotal components
-          within our ecosystem. ZkSync.ai, initially introduced on the ZkSync
-          Era mainnet, serves as a versatile AI-powered utility token,
-          facilitating various functions within the ZkSync network. As the
-          cornerstone of our platform, it streamlines transactions, empowers
-          developer tools, and enhances user engagement. Meanwhile, the ZKAI
-          Blockchain, set to launch as the first AI-powered blockchain,
-          represents a significant advancement. Serving as both the blockchain
-          and governance token of the forthcoming ZkSync.ai chain, ZKAI will
-          drive network governance, incentivize participation, and propel
-          innovation, marking a groundbreaking milestone in the blockchain
-          landscape.`,
+      title: `Will I receive support and maintenance after the website is created?`,
+      des: `Yes, we provide support and maintenance after the website is created.
+          Depending on your needs, you can make changes as required. Billing can
+          be done either as a one-time payment or prepaid.`,
     },
     {
       panelNumber: 5,
-      title: "How can I Buy ZkSync.ai native token ZKAI?",
-      des: `To buy ZKAI tokens, you'll be able to do so during the live presale by
-          connecting your Web3 crypto wallet . The platform will accept multiple
-          different cryptocurrencies, including Ethereum, and stablecoins,
-          providing a wide range of options for your investment.`,
+      title: "What is a domain and how to buy/get a domain?",
+      des: `A domain is a unique name used to identify a website on the internet.
+          <br />
+          <br />
+          You can purchase a domain from various providers, and we can assist
+          you with that.`,
     },
     {
       panelNumber: 6,
-      title: "What is the ZKUSD token?",
-      des: `ZKUSD is a stablecoin within the Ethereum & ZkAI Networks, pegged to
-          Tether’s USDT, which is also pegged to the US dollar, ensuring
-          stability and reliability for transactions and investment returns.`,
+      title: "Website Maintenance Simplified",
+      des: `Website maintenance involves regular updates to software, security
+          monitoring, content updates, and performance optimization. Our
+          dedicated team ensures your website remains secure, up-to-date, and
+          running smoothly.
+          <br />
+          <br />
+          We provide website maintenance services with straightforward pricing.
+          For smaller projects, we provide fixed pricing, while larger projects
+          receive custom quotes.
+          <br />
+          <br />
+          Investing in website maintenance enhances user experience, protects
+          your online reputation, and ensures your business's success. Let us
+          handle the technical details while you focus on growing your business.`,
+    },
+    {
+      panelNumber: 7,
+      title: "Why should we work with you over any other firm?",
+      des: `Great question, as there are many options. However, it is important to
+          keep in mind that well over 95% of web development or design
+          businesses are using a Content Management System to create their
+          websites, filling our pre-created templates with your information.
+          <br />
+          <br />
+          This may be ok with you, however it is not a good solution long-term.
+          <br />
+          <br />
+          This decision does ultimately come down to what you feel is right for
+          you and your needs alone. However, we can guarantee that what we
+          provide you will be specifically tailored to your needs, and not just
+          some filled out template that many other sites are using. We go above
+          and beyond for you and will be using the best technologies available
+          to create your site, not just what is convenient for us.`,
     },
   ],
 };

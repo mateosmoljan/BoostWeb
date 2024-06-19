@@ -68,7 +68,7 @@ const Navbar = () => {
               />
             </div>
             <p className="font-poppins text-2xl tracking-wide	 text-white">
-              ZkSync<span className="text-gradient">.ai</span>
+              Boost<span className="text-gradient">Web</span>
             </p>
           </Link>
 

@@ -22,7 +22,7 @@ export const FaqData: DataObject = {
     },
     {
       panelNumber: 3,
-      title: "What are the benefits of joining the ZkSync.ai presale?",
+      title: "What information and materials do I need to prepare?",
       des: `<span className="font-titleBold">Goal of the website:</span> What is
           the purpose of the website and what is intended to be achieved through
           it. <br />

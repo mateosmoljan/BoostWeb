@@ -14,10 +14,8 @@ function Testimonials() {
             About US?
           </h2>
           <p className="text-center max-w-[500px]">
-            It was very pleasant to work with them, they surpassed by far the
-            expectations resulting in a high quality project. I know that they
-            have the ability to comply with any type of software, so I do not
-            hesitate to recommend them.
+            Discover how our expert IT support services have helped businesses
+            achieve their full potential.
           </p>
         </div>
         <div className="flex justify-center md:justify-between">

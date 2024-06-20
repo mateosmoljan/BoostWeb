@@ -5,15 +5,19 @@ import Image from "next/image";
 
 function Testimonials() {
   return (
-    <section id="testimonials" className="w-full">
+    <section id="testimonials" className="w-full py-20">
       <div className="container">
         <div className="flex flex-col gap-4 items-center">
           <h2 className="">
-            Easy to start, <span className="text-gradient">easy to run</span>
+            What Our
+            <span className="text-gradient"> Clients Say </span>
+            About US?
           </h2>
           <p className="text-center max-w-[500px]">
-            Discover how we are pioneering advancements and setting new
-            standards in artificial intelligence innovation
+            It was very pleasant to work with them, they surpassed by far the
+            expectations resulting in a high quality project. I know that they
+            have the ability to comply with any type of software, so I do not
+            hesitate to recommend them.
           </p>
         </div>
         <div className="flex justify-center md:justify-between">

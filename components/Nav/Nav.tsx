@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <section
-      className={`w-full fixed z-40 ${windowScrolled ? "" : "bg-blue"}
+      className={`w-full fixed z-50 ${windowScrolled ? "" : "bg-blue"}
         ${!windowScrolled && open ? "bg-blue" : ""} ${
         visible ? "transleteNavUp" : "transleteNav"
       }`}
@@ -94,8 +94,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden lg:flex">
-            <Link href="/build" className="btn ml-4 !py-2.5">
-              Build
+            <Link href="/contact" className="btn ml-4 !py-2.5">
+              Contact
             </Link>
           </div>
 
@@ -135,10 +135,10 @@ const Navbar = () => {
             ))}
             <li className="flex" onClick={() => setOpen(false)}>
               <Link
-                href="/build"
+                href="/contact"
                 className="btn !bg-black !text-white !py-2 pb-2"
               >
-                Build
+                Contact
               </Link>
             </li>
           </ul>

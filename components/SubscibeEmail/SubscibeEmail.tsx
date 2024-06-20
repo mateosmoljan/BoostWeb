@@ -8,7 +8,7 @@ function SubscibeEmail() {
           <h2 className="!text-3xl mb-8 !text-left !leading-10">
             Sign up for email updates{" "}
             <span className="text-gray-400">
-              to keep up to date with the ZkSync.ai
+              to keep up to date with the BoostWeb.io
             </span>
           </h2>
           <form action="" className="">
@@ -18,7 +18,7 @@ function SubscibeEmail() {
                 placeholder="Email"
                 className="w-full rounded-full p-4 mb-6 bg-transparent border-2 border-white text-white"
               />
-              <button className="btn  ">Subscribe</button>
+              <button className="btn">Subscribe</button>
             </div>
           </form>
         </div>

@@ -3,20 +3,20 @@ import Link from "next/link";
 function ProjectStats() {
   const stats = [
     {
-      title: "Projects",
-      value: "380",
+      title: "Performance",
+      value: "100%",
     },
     {
-      title: "Developers",
-      value: "14,784",
+      title: "Security",
+      value: "100%",
     },
     {
-      title: "Partners",
-      value: "29",
+      title: "Best Practices",
+      value: "100%",
     },
     {
-      title: "Countries",
-      value: "102",
+      title: "SEO",
+      value: "100%",
     },
   ];
 
@@ -26,8 +26,8 @@ function ProjectStats() {
         <div className="w-full md:w-[80%] flex justify-center flex-col items-center m-auto gap-10 sm:gap-16">
           <div>
             <h2>
-              The Blockchain Industry's{" "}
-              <span className="text-gradient">OpenAI</span>
+              Empowering Enterprises with Digital Transformation and{" "}
+              <span className="text-gradient">Global IT Support Solutions</span>
             </h2>
           </div>
           <div className="grid gap-4 md:grid-0 grid-cols-2 md:flex md:divide-x divide-gray-200 w-full justify-between">
@@ -42,19 +42,13 @@ function ProjectStats() {
             ))}
           </div>
           <p className="text-center md:text-[24px] text-[18px] leading-8">
-            ZkSync.ai has established collaborations with numerous projects
-            built on the ZkSync platform, among which notable examples include
-            Koi Finance, zkSync ID, Karat, and Holdstation. Moreover, it has
-            forged partnerships with leading venture capital firms and
-            blockchain development foundations spanning over 100 countries
-            worldwide. This extensive network underscores ZkSync.ai's global
-            reach and its pivotal role in advancing the adoption and innovation
-            of ZkSync-based solutions across diverse sectors in blockchain
-            technology.
+            Transforming your business processes for the digital future. We
+            provide dedicated resources and staff augmentation to enterprises
+            worldwide for IT support and success.
           </p>
           <button className="custom_gradient_box p-2 relative">
             <Link href="/explore" className="btn relative z-10">
-              Visit Product
+              Get Started Today
             </Link>
           </button>
         </div>

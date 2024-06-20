@@ -9,13 +9,14 @@ function HomeSection() {
       <div className="bg-primary w-[200px] absolute h-full -right-[100px]  blur-[200px] opacity-50" />
       <div className="container flex flex-col gap-10 h-screen items-center justify-center relative">
         <h1 className="w-[90%] sm:w-auto text-[48px] md:text-[52px] lg:text-[72px] leading-[120%] md:tracking-[-2.16px] tracking-[-1.44px] text-center">
-          Leading the Crypto Revolution with{" "}
-          <span className="text-gradient">AI Solutions</span>
+          Software Development <br />
+          <span className="text-gradient">Modern Solution !</span>
         </h1>
         <div className="flex justify-center">
-          <p className="w-[90%] sm:w-auto text-gray max-w-[577px] text-center md:text-[24px] text-[18px]">
-            Start building the future of cryptocurrency today with our AI
-            solutions
+          <p className="leading-[130%] w-[90%] sm:w-auto text-gray max-w-[577px] text-center md:text-[24px] text-[18px]">
+            We help enterprises through custom business solutions and provide IT
+            outsourcing services to companies with agility, quality, and
+            commitment.
           </p>
         </div>
         <div className="flex justify-center gap-8 relative flex-col sm:flex-row w-full  items-center">
@@ -24,7 +25,7 @@ function HomeSection() {
               href="/build"
               className=" btn z-10 flex gap-2 relative items-center justify-center text-[14px] !text-center leading-8 md:text-lg"
             >
-              Start Building <FaArrowRight />
+              Free Consultation <FaArrowRight />
             </Link>
           </button>
           <button className="w-[90%] sm:w-auto">

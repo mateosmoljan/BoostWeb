@@ -1,12 +1,44 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import SeeMore from "./SeeMore";
+import Image from "next/image";
+import image1 from "@/public/assets/images/globeweb.png";
 
 function HomeSection() {
   return (
     <section className="h-screen w-full flex flex-col items-center relative">
       <div className="bg-primary w-[200px] absolute h-full -left-[100px]  blur-[200px] opacity-50" />
       <div className="bg-primary w-[200px] absolute h-full -right-[100px]  blur-[200px] opacity-50" />
+      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-[10%] right-[30%]">
+        <Image
+          src={image1}
+          alt="Globe"
+          width={108}
+          height={108}
+          className="w-full h-full"
+          placeholder="blur"
+        />
+      </div>
+      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-[50%] left-[20%]">
+        <Image
+          src={image1}
+          alt="Globe"
+          width={108}
+          height={108}
+          className="w-full h-full"
+          placeholder="blur"
+        />
+      </div>
+      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute bottom-[10%] right-[20%]">
+        <Image
+          src={image1}
+          alt="Globe"
+          width={108}
+          height={108}
+          className="w-full h-full"
+          placeholder="blur"
+        />
+      </div>
       <div className="container flex flex-col gap-10 h-screen items-center justify-center relative">
         <h1 className="w-[90%] sm:w-auto text-[48px] md:text-[52px] lg:text-[72px] leading-[120%] md:tracking-[-2.16px] tracking-[-1.44px] text-center">
           Software Development <br />

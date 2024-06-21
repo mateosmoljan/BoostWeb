@@ -43,6 +43,7 @@ function TestimonialsSlider() {
                 <div className="flex flex-col gap-2 uppercase">
                   <span>{item.name}</span>
                   <p className="text-sm">{item.industry}</p>
+                  <span>⭐⭐⭐⭐⭐</span>
                 </div>
               </div>
             </div>

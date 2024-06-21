@@ -3,25 +3,25 @@ import Link from "next/link";
 function ProjectStats() {
   const stats = [
     {
-      title: "Performance",
+      title: "Projects 📊",
+      value: "150+",
+    },
+    {
+      title: "Performance 🚀",
       value: "100%",
     },
     {
-      title: "Security",
-      value: "100%",
+      title: "Revenue Generated for Our Clients 💰",
+      value: "$2M+",
     },
     {
-      title: "Best Practices",
-      value: "100%",
-    },
-    {
-      title: "SEO",
+      title: "Best Practices 🔒",
       value: "100%",
     },
   ];
 
   return (
-    <section className="w-full mb-32" id="project_stats">
+    <section className="w-full mb-32" id="about">
       <div className="container py-20 rounded-3xl bg-gradient-fade">
         <div className="w-full md:w-[80%] flex justify-center flex-col items-center m-auto gap-10 sm:gap-16">
           <div>
@@ -36,7 +36,7 @@ function ProjectStats() {
                 key={index}
                 className="flex flex-col items-center gap-4 w-full md:w-1/4"
               >
-                <p>{item.title}</p>
+                <p className="text-center">{item.title}</p>
                 <h2 className="!text-3xl">{item.value}</h2>
               </div>
             ))}

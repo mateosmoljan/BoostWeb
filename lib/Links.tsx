@@ -10,7 +10,8 @@ type DataObject = {
 export const linksData: DataObject = {
   data: [
     { path: "/", titles: "Home" },
-    { path: "/team", titles: "Team" },
-    { path: "/presale", titles: "Presale" },
+    { path: "/services", titles: "Services" },
+    { path: "/references", titles: "References" },
+    { path: "/#faq", titles: "Faq" },
   ],
 };

@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="lg:flex hidden">
             <div className="flex gap-3 md:gap-5">
-              <ul className="flex gap-4 items-center">
+              <ul className="flex gap-4 items-center p-1.5 border-white_hover border-[1px] rounded-full">
                 {linksData.data.map((item, index) => (
                   <li key={index} className={``}>
                     <a

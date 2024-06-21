@@ -39,7 +39,7 @@ function TestimonialsSlider() {
                 />
               </div>
               <div className="flex flex-col item-center justify-center gap-8">
-                <p>{item.des}</p>
+                <p className="md:h-[150px]">{item.des}</p>
                 <div className="flex flex-col gap-2 uppercase">
                   <span>{item.name}</span>
                   <p className="text-sm">{item.industry}</p>

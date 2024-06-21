@@ -5,8 +5,8 @@ import image1 from "@/public/assets/images/logo.png";
 
 function Footer() {
   return (
-    <footer className="mt-32 relative ">
-      <div className="absolute w-[300px] h-[300px] blur-3xl  opacity-30 rounded-full bg-gradient-blue -top-10 -left-20" />
+    <footer className="mt-32 relative">
+      <div className="absolute w-[300px] h-[300px] blur-3xl  opacity-30 rounded-full bg-gradient-blue -top-10 -left-20 z-10" />
       <div className="w-full bg-gray2 py-12">
         <div className="container flex justify-between flex-col  gap-8 items-center">
           <div className=" mb-5 flex items-center gap-2 ">

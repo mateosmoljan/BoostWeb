@@ -6,10 +6,10 @@ import image1 from "@/public/assets/images/globeweb.png";
 
 function HomeSection() {
   return (
-    <section className="h-screen w-full flex flex-col items-center relative">
+    <section className="h-screen w-full flex flex-col items-center relative ">
       <div className="bg-primary w-[200px] absolute h-full -left-[100px]  blur-[200px] opacity-50" />
       <div className="bg-primary w-[200px] absolute h-full -right-[100px]  blur-[200px] opacity-50" />
-      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-[10%] right-[30%]">
+      <div className="hidden lg:block lg:w-[calc(var(--one)*56)] lg:h-[calc(var(--one)*56)] absolute top-[10%] right-[30%] opacity-40">
         <Image
           src={image1}
           alt="Globe"
@@ -19,7 +19,7 @@ function HomeSection() {
           placeholder="blur"
         />
       </div>
-      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-[50%] left-[20%]">
+      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-[50%] left-[20%] opacity-40">
         <Image
           src={image1}
           alt="Globe"
@@ -29,7 +29,7 @@ function HomeSection() {
           placeholder="blur"
         />
       </div>
-      <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute bottom-[10%] right-[20%]">
+      <div className="hidden lg:block lg:w-[calc(var(--one)*88)] lg:h-[calc(var(--one)*88)] absolute bottom-[10%] right-[20%] opacity-40">
         <Image
           src={image1}
           alt="Globe"

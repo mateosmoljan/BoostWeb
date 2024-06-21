@@ -8,6 +8,7 @@ import { Divide as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import Drawer from "@mui/joy/Drawer";
 import { linksData } from "@/lib/Links";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -33,6 +34,18 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
+  useEffect(() => {
+    if (open) {
+      console.log("open");
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, [open]);
+
   const toggleDrawer =
     (inOpen: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
@@ -49,7 +62,7 @@ const Navbar = () => {
   return (
     <section
       className={`w-full fixed z-50 ${windowScrolled ? "" : "bg-blue"}
-        ${!windowScrolled && open ? "bg-blue" : ""} ${
+        ${!windowScrolled || open ? "bg-blue" : ""} ${
         visible ? "transleteNavUp" : "transleteNav"
       }`}
     >
@@ -118,26 +131,27 @@ const Navbar = () => {
         anchor="top"
         open={open}
         onClose={toggleDrawer(false)}
-        className=" drawer_custom translate-y-[64px] !z-10"
+        className=" drawer_custom translate-y-[96px] relative !z-10 overflow-hidden"
       >
-        <div className={`bg-blue w-full px-3  py-3 pt-4 shadow-md`}>
+        <div className="bg-primary w-[200px] absolute h-full  blur-[200px] opacity-50" />
+        <div className={`bg-blue w-full px-3  py-3 pt-6 shadow-md relative`}>
           <ul className="flex flex-col gap-4">
             {linksData.data.map((item, index) => (
               <li key={index} className={`flex `}>
                 <a
                   href={item.path}
-                  className={`text-gray-400  hover:text-white text-sm relative block leading-7 px-6 py-2`}
+                  className={`text-gray-400 w-full hover:text-white text-xl relative block leading-7 px-6 py-4`}
                   onClick={() => setOpen(false)}
                 >
-                  <div className={` `}>{item.titles}</div>
+                  <div className={`flex justify-between items-center w-full `}>
+                    {item.titles}
+                    <FaArrowRight />
+                  </div>
                 </a>
               </li>
             ))}
-            <li className="flex" onClick={() => setOpen(false)}>
-              <Link
-                href="/contact"
-                className="btn !bg-black !text-white !py-2 pb-2"
-              >
+            <li className="flex pl-3 pt-4" onClick={() => setOpen(false)}>
+              <Link href="/contact" className="btn !text-xl !py-3 !px-6">
                 Contact
               </Link>
             </li>

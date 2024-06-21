@@ -34,7 +34,7 @@ function SubscibeEmail() {
           />
         </div>
       </div>
-      <div className="-z-10 w-[calc(var(--one)*598)] h-[calc(var(--one)*598)] absolute top-0 right-0 custom_rotation_360 overflow-hidden">
+      <div className="hidden xl:block -z-10 w-[calc(var(--one)*598)] h-[calc(var(--one)*598)] absolute top-0 right-0 custom_rotation_360 overflow-hidden">
         <Image
           src={image2}
           alt="Object"

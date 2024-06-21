@@ -17,7 +17,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 
 *,
@@ -46,8 +45,7 @@ a {
 }
 
 body {
-  @apply bg-[#000838];
-  overflow-x: hidden !important;
+  @apply bg-[#000838] overflow-x-hidden;
 }
 
 h1,
@@ -59,6 +57,9 @@ h6,
 span,
 li {
   @apply text-white;
+}
+h4 {
+  @apply  text-[20px] md:text-2xl font-normal tracking-[-0.48px] text-white md:tracking-[-0.96px];
 }
 
 h2 {
@@ -78,7 +79,7 @@ p {
 /* Button */
 
 .btn {
-  @apply flex items-center bg-white rounded-full font-poppins text-black cursor-pointer text-[14px] leading-8 md:text-lg px-8 py-4;
+  @apply flex items-center bg-white rounded-full font-poppins text-black cursor-pointer text-[14px] leading-8 md:text-lg px-4 py-2 md:px-8 md:py-4;
 }
 
 .btn:hover {

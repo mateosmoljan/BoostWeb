@@ -47,7 +47,7 @@ function ProjectStats() {
             worldwide for IT support and success.
           </p>
           <button className="custom_gradient_box p-2 relative">
-            <Link href="/explore" className="btn relative z-10">
+            <Link href="/contact" className="btn relative z-10">
               Get Started Today
             </Link>
           </button>

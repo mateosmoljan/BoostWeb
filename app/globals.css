@@ -88,6 +88,11 @@ p {
   box-shadow: #00f4fb 0px 0px 40px;
 }
 
+.custom_text {
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+}
+
 .text-gradient {
     -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(60deg, #0c45e7 11.47%, #00f4fb 85.26%);

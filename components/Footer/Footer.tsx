@@ -37,7 +37,7 @@ function Footer() {
 
               <li className="  text-center sm:px-[calc(var(--one)*40)] sm:border-r-[1px] sm:border-gray-400">
                 <a
-                  href="/services"
+                  href="#services"
                   className="hover:underline opacity-60 hover:opacity-100"
                 >
                   Services

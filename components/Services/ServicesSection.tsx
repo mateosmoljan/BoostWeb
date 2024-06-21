@@ -4,7 +4,7 @@ import Link from "next/link";
 import image1 from "@/public/assets/images/globeweb.png";
 function ServicesSection() {
   return (
-    <section className="w-full py-20 relative">
+    <section className="w-full py-20 relative" id="services">
       <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute top-0 right-[20%] opacity-30">
         <Image
           src={image1}
@@ -42,11 +42,11 @@ function ServicesSection() {
             processes, and delivering top-tier technical support to ensure your
             business thrives in the digital age.
           </p>
-          <button className="custom_gradient_box relative p-2">
+          {/* <button className="custom_gradient_box relative p-2">
             <Link href="/services" className="btn relative z-10">
               See All Services
             </Link>
-          </button>
+          </button> */}
         </div>
         <div className="lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
           {ServicesCardData.data.map((item, index) => (

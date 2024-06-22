@@ -31,3 +31,11 @@
 label {
     @apply !text-gray-400;
 }
+
+input:focus {
+    @apply !border-white ;
+}
+
+.mui-1bn53lx {
+    @apply !text-white w-full border-white_hover border-2;
+}

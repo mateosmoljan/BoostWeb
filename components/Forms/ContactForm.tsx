@@ -231,7 +231,7 @@ function ContactForm() {
       </FormControl>
       <FormControl>
         <InputLabel id="demo-simple-select-label" className="!text-gray-400">
-          How did you heard about BoostWeb?
+          How did you hear about BoostWeb?
         </InputLabel>
         <Select
           labelId="demo-simple-select-label"

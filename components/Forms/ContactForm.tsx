@@ -20,6 +20,11 @@ import React, { FormEvent, ReactNode, useRef, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import "./form.css";
 
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+
 function ContactForm() {
   const form = useRef(null);
   const [email, setEmail] = useState<string>("");
@@ -182,9 +187,6 @@ function ContactForm() {
           }}
         >
           <MenuItem value="Web Development">🌐 Web Development</MenuItem>
-          <MenuItem value="Mobile App Development">
-            📱 Mobile App Development
-          </MenuItem>
           <MenuItem value="E-commerce Solutions">
             🛒 E-commerce Solutions
           </MenuItem>
@@ -263,6 +265,21 @@ function ContactForm() {
           <MenuItem value="Other">Other (Please Specify)</MenuItem>
         </Select>
       </FormControl>
+      <div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DemoContainer
+            components={["DatePicker"]}
+            sx={{
+              color: "white",
+            }}
+          >
+            <DatePicker
+              label="I want to launch my project on:"
+              name="start_date"
+            />
+          </DemoContainer>
+        </LocalizationProvider>
+      </div>
       <div>
         <textarea
           className="text-white resize-none h-52 bg-transparent border-white_hover border-2 w-full rounded-md py-4 px-8"

@@ -7,3 +7,23 @@
 .mui-6hp17o-MuiList-root-MuiMenu-list {
     max-height: 200px;
 }
+
+.mui-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    @apply !text-white  w-full border-white_hover border-2;
+}
+
+.mui-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    @apply !text-white;
+}
+
+.mui-tp434x-MuiFormControl-root-MuiTextField-root {
+    @apply !text-white w-full border-white_hover border-2;
+}
+
+.mui-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    @apply !text-white;
+}
+
+.mui-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    @apply !text-gray-400;
+}

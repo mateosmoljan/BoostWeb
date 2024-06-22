@@ -277,6 +277,9 @@ function ContactForm() {
             <DatePicker
               label="I want to launch my project on:"
               name="start_date"
+              sx={{
+                width: "100%",
+              }}
             />
           </DemoContainer>
         </LocalizationProvider>

@@ -49,6 +49,7 @@ const config: Config = {
         blue: "#010e5b",
         blue_fade: "rgba(0,13,61,0)",
         white_hover: "hsla(0, 0%, 100%, .2)",
+        success_green: "#9dd49d",
       },
     },
   },

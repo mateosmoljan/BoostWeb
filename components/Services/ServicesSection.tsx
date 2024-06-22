@@ -27,7 +27,7 @@ function ServicesSection() {
           />
         </div>
         <div className="flex flex-col gap-4 items-center lg:items-start lg:w-[40%] relative">
-          <div className="absolute -right-20">
+          <div className="absolute -right-20 animate_dust">
             <Image
               src="/assets/images/stars-dust.svg"
               alt="Logo BoostWeb"

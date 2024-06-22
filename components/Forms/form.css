@@ -1,0 +1,9 @@
+
+
+.MuiSvgIcon-root  {
+    @apply !text-gray-400;
+}
+
+.mui-6hp17o-MuiList-root-MuiMenu-list {
+    max-height: 200px;
+}

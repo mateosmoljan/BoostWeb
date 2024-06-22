@@ -1,5 +1,10 @@
 "use client";
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GoogleIcon from "@mui/icons-material/Google";
+import PeopleIcon from "@mui/icons-material/People";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import PersonIcon from "@mui/icons-material/Person";
 import emailjs from "@emailjs/browser";
 import {
   Alert,
@@ -11,8 +16,9 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
-import React, { FormEvent, useRef, useState } from "react";
+import React, { FormEvent, ReactNode, useRef, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
+import "./form.css";
 
 function ContactForm() {
   const form = useRef(null);
@@ -34,6 +40,21 @@ function ContactForm() {
 
   const handleChangeBudget = (event: SelectChangeEvent) => {
     setBudget(event.target.value as string);
+  };
+
+  const [selectedServices, setSelectedServices] = React.useState<string[]>([]);
+
+  const handleChangeService = (
+    event: React.ChangeEvent<{ value: unknown }>
+  ) => {
+    const value = event.target.value as string[];
+    setSelectedServices(value);
+  };
+
+  const [source, setSource] = React.useState("");
+
+  const handleChangeSource = (event: SelectChangeEvent) => {
+    setSource(event.target.value as string);
   };
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -68,71 +89,203 @@ function ContactForm() {
       onSubmit={sendEmail}
       className="flex flex-col gap-6 w-full relative"
     >
+      <div className="flex gap-3 flex- justify-between">
+        <div className=" w-full md:w-1/2">
+          <input
+            className="text-white border-white_hover border-2 bg-transparent placeholder-gray-400 w-full rounded-md py-4 px-8"
+            required
+            type="text"
+            name="first_name"
+            placeholder="First Name*"
+          />
+        </div>
+        <div className="w-full md:w-1/2">
+          <input
+            className="text-white bg-transparent border-white_hover border-2 placeholder-gray-400 w-full rounded-md py-4 px-8"
+            required
+            type="text"
+            name="last_name"
+            placeholder="Last Name*"
+          />
+        </div>
+      </div>
       <div>
         <input
-          className="text-white bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
-          required
+          className="text-white bg-transparent border-white_hover border-2 placeholder-gray-400 w-full rounded-md py-4 px-8"
           type="text"
-          name="name"
-          placeholder="Name"
+          name="business_name"
+          placeholder="Business Name"
         />
       </div>
       <div>
         <input
-          className="text-white bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
+          className="text-white bg-transparent border-white_hover border-2 placeholder-gray-400 w-full rounded-md py-4 px-8"
           required
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Email*"
         />
       </div>
       <FormControl>
-        <InputLabel id="demo-simple-select-label">Industry</InputLabel>
+        <InputLabel id="demo-simple-select-label" className="!text-gray-400">
+          Industry*
+        </InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={industry}
           label="Industry"
           name="industry"
+          className="bg-transparent border-white_hover border-2 !text-white !pl-4"
           onChange={handleChangeIndustry}
+          sx={{
+            paddingLeft: 32,
+          }}
         >
-          <MenuItem value="Crypto">Ten</MenuItem>
-          <MenuItem value="Custom Software">Twenty</MenuItem>
-          <MenuItem value="Booking">Thirty</MenuItem>
+          <MenuItem value="E-commerce">🛒 E-commerce</MenuItem>
+          <MenuItem value="Healthcare">🏥 Healthcare</MenuItem>
+          <MenuItem value="Education">📚 Education</MenuItem>
+          <MenuItem value="Finance">💼 Finance</MenuItem>
+          <MenuItem value="Entertainment">🎬 Entertainment</MenuItem>
+          <MenuItem value="Technology">💻 Technology</MenuItem>
+          <MenuItem value="Real Estate">🏠 Real Estate</MenuItem>
+          <MenuItem value="Travel">✈️ Travel</MenuItem>
+          <MenuItem value="Food & Beverage">🍔 Food & Beverage</MenuItem>
+          <MenuItem value="Automotive">🚗 Automotive</MenuItem>
+          <MenuItem value="Fashion">👗 Fashion</MenuItem>
+          <MenuItem value="Sports">⚽ Sports</MenuItem>
+          <MenuItem value="Crypto/Blockchain">🔗 Crypto/Blockchain</MenuItem>
+          <MenuItem value="AI">🤖 AI</MenuItem>
+          <MenuItem value="Custom">✏️ Custom</MenuItem>
         </Select>
       </FormControl>
       <FormControl>
-        <InputLabel id="demo-simple-select-label">Budget</InputLabel>
+        <InputLabel id="demo-simple-select-label" className="!text-gray-400">
+          Industry*
+        </InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={industry}
+          multiple
+          value={selectedServices}
+          label="Service"
+          name="service"
+          className="bg-transparent border-white_hover border-2 !text-white !pl-4"
+          onChange={
+            handleChangeService as (
+              event: SelectChangeEvent<string[]>,
+              child: ReactNode
+            ) => void
+          }
+          sx={{
+            paddingLeft: 32,
+          }}
+        >
+          <MenuItem value="Web Development">🌐 Web Development</MenuItem>
+          <MenuItem value="Mobile App Development">
+            📱 Mobile App Development
+          </MenuItem>
+          <MenuItem value="E-commerce Solutions">
+            🛒 E-commerce Solutions
+          </MenuItem>
+          <MenuItem value="UI/UX Design">🎨 UI/UX Design</MenuItem>
+          <MenuItem value="Custom Software Development">
+            🛠️ Custom Software Development
+          </MenuItem>
+          <MenuItem value="Cloud Services">☁️ Cloud Services</MenuItem>
+          <MenuItem value="Digital Marketing">📈 Digital Marketing</MenuItem>
+          <MenuItem value="SEO">🔍 SEO (Search Engine Optimization)</MenuItem>
+          <MenuItem value="Blockchain Development">
+            🔗 Blockchain Development
+          </MenuItem>
+          <MenuItem value="AI Solutions">🤖 AI Solutions</MenuItem>
+          <MenuItem value="Data Analytics">📊 Data Analytics</MenuItem>
+          <MenuItem value="Cybersecurity">🔒 Cybersecurity</MenuItem>
+          <MenuItem value="IoT Solutions">🌐 IoT Solutions</MenuItem>
+          <MenuItem value="Content Management Systems">
+            📄 Content Management Systems
+          </MenuItem>
+          <MenuItem value="Consulting Services">
+            🔍 Consulting Services
+          </MenuItem>
+          <MenuItem value="Maintenance & Support">
+            🛠️ Maintenance & Support
+          </MenuItem>
+          <MenuItem value="Other">🔧 Other (Please Specify)</MenuItem>
+        </Select>
+      </FormControl>
+      <FormControl>
+        <InputLabel id="demo-simple-select-label" className="!text-gray-400">
+          Budget ($)*
+        </InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={budget}
           label="Budget"
           name="budget"
+          className="bg-transparent border-white_hover border-2 !text-white !pl-4"
           onChange={handleChangeBudget}
         >
-          <MenuItem value="500">500</MenuItem>
-          <MenuItem value="1000">1000</MenuItem>
-          <MenuItem value="Booking">10000</MenuItem>
+          <MenuItem value="< 500">{"< "}500</MenuItem>
+          <MenuItem value="500-1000">500-1000</MenuItem>
+          <MenuItem value="1000-5000">1000-5000</MenuItem>
+          <MenuItem value="5000-10000">5000-10000</MenuItem>
+          <MenuItem value="10000-100000">10000-100000</MenuItem>
+          <MenuItem value="100000+">100000+</MenuItem>
+        </Select>
+      </FormControl>
+      <FormControl>
+        <InputLabel id="demo-simple-select-label" className="!text-gray-400">
+          How did you heard about BoostWeb?
+        </InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={source}
+          label="Source"
+          name="source"
+          className="bg-transparent border-white_hover border-2 !text-white !pl-4"
+          onChange={handleChangeSource}
+        >
+          <MenuItem value="Facebook">
+            <FacebookIcon style={{ marginRight: "10px" }} /> Facebook
+          </MenuItem>
+          <MenuItem value="Instagram">
+            <InstagramIcon style={{ marginRight: "10px" }} /> Instagram
+          </MenuItem>
+          <MenuItem value="Google">
+            <GoogleIcon style={{ marginRight: "10px" }} /> Google
+          </MenuItem>
+          <MenuItem value="Friend or Family">
+            <PeopleIcon style={{ marginRight: "10px" }} /> Friend or Family
+          </MenuItem>
+          <MenuItem value="Referral">
+            <ThumbUpIcon style={{ marginRight: "10px" }} /> Referral
+          </MenuItem>
+          <MenuItem value="Current Client">
+            <PersonIcon style={{ marginRight: "10px" }} /> Current Client
+          </MenuItem>
+          <MenuItem value="Other">Other (Please Specify)</MenuItem>
         </Select>
       </FormControl>
       <div>
         <textarea
-          className="text-white resize-none h-52 bg-gray2 placeholder-gray xl:w-[80%] w-full rounded-md py-3 px-8"
+          className="text-white resize-none h-52 bg-transparent border-white_hover border-2 w-full rounded-md py-4 px-8"
           name="message"
           placeholder="Message"
         />
       </div>
-      <div className="flex items-start ">
-        <button className={`${open ? "hidden" : ""}`}>
+      <div className="w-full md:flex items-center">
+        <button className={` cursor-pointer w-full ${open ? "hidden" : ""}`}>
           <input
-            className="btn "
+            className="w-full btn cursor-pointer "
             type="submit"
             placeholder="Send"
             value="Send"
           />
         </button>
-        <div className="relative left-0 xl:w-[80%] w-full">
+        <div className="relative left-0  w-full ">
           <Collapse in={open}>
             <Alert
               action={
@@ -147,10 +300,14 @@ function ContactForm() {
                   <CloseIcon fontSize="inherit" />
                 </IconButton>
               }
-              sx={{ mb: 2, p: 0, px: 10, height: 40 }}
+              sx={{
+                mb: 2,
+                p: 0,
+                px: 10,
+              }}
             >
-              Success!
-              <p>
+              <h6 className="text-black text-lg md:text-xl ">Success!</h6>
+              <p className="leading-[100%]">
                 Thank you for your inquiry! We have received your message and
                 sent a confirmation email to your inbox.
               </p>

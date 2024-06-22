@@ -271,6 +271,7 @@ function ContactForm() {
             components={["DatePicker"]}
             sx={{
               color: "white",
+              width: "100%",
             }}
           >
             <DatePicker

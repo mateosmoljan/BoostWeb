@@ -161,7 +161,7 @@ function ContactForm() {
       </FormControl>
       <FormControl>
         <InputLabel id="demo-simple-select-label" className="!text-gray-400">
-          Industry*
+          Services*
         </InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -199,14 +199,8 @@ function ContactForm() {
             🔗 Blockchain Development
           </MenuItem>
           <MenuItem value="AI Solutions">🤖 AI Solutions</MenuItem>
-          <MenuItem value="Data Analytics">📊 Data Analytics</MenuItem>
-          <MenuItem value="Cybersecurity">🔒 Cybersecurity</MenuItem>
-          <MenuItem value="IoT Solutions">🌐 IoT Solutions</MenuItem>
           <MenuItem value="Content Management Systems">
             📄 Content Management Systems
-          </MenuItem>
-          <MenuItem value="Consulting Services">
-            🔍 Consulting Services
           </MenuItem>
           <MenuItem value="Maintenance & Support">
             🛠️ Maintenance & Support

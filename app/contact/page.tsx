@@ -36,8 +36,25 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 relative">
+          <div className="hidden md:block absolute -top-[10%] -right-[40%] animate_dust">
+            <Image
+              src="/assets/images/stars-dust.svg"
+              alt="Logo BoostWeb"
+              width={300}
+              height={300}
+              className="rounded-full"
+            />
+          </div>
           <ContactForm />
+          <div className="hidden md:block absolute -left-[40%] -bottom-[10%] animate_dust_reverse">
+            <Image
+              src="/assets/images/star-dust-blue.svg"
+              alt="Dust"
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
       </section>
     </main>

@@ -13,6 +13,6 @@ export const ReferencesTitleData: DataObject = {
     { title: "Crypto" },
     { title: "Education" },
     { title: "AI" },
-    { title: "Other" },
+    // { title: "Other" },
   ],
 };

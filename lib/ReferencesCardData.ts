@@ -7,6 +7,7 @@ import ecommerce1 from "@/public/assets/images/references/ecommerce1.png";
 import ecommerce2 from "@/public/assets/images/references/ecommerce2.png";
 import ai2 from "@/public/assets/images/references/ai2.png";
 import ecommerce3 from "@/public/assets/images/references/ecommerce3.png";
+import ai3 from "@/public/assets/images/references/ai3.png";
 
 type LinksData = {
   image: StaticImageData;
@@ -57,9 +58,9 @@ export const ReferencesCardData: DataObject = {
       url: "https://www.norwalkfurniture.com",
     },
     {
-      image: ai2,
+      image: ai3,
       title: "Title1",
-      url: "https://www.tabos.cloud",
+      url: "https://www.site-shot.com",
     },
     {
       image: ai2,
@@ -135,14 +136,14 @@ export const ReferencesCardData: DataObject = {
       url: "https://www.noon.ai",
     },
     {
-      image: accommodation1,
+      image: ai2,
       title: "Title1",
-      url: "https://villapanoramaistria.com",
+      url: "https://www.tabos.cloud",
     },
     {
-      image: accommodation1,
+      image: ai3,
       title: "Title1",
-      url: "https://villapanoramaistria.com",
+      url: "https://www.site-shot.com",
     },
     {
       image: accommodation1,

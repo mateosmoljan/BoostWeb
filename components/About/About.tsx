@@ -10,7 +10,7 @@ function About() {
           <h2 className="!text-left relative">
             We build your site custom to you, <br />
             <span className="text-gradient">Line by Line.</span> <br />
-            <div className="-z-10 absolute -top-5 sm:-right-20 animate_dust">
+            <div className="-z-10 absolute -top-5 md:-right-20 animate_dust">
               <Image
                 src="/assets/images/stars-dust.svg"
                 alt="Logo BoostWeb"

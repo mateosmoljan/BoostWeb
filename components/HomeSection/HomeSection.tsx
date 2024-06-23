@@ -43,14 +43,14 @@ function HomeSection() {
         <h1 className="w-[90%] sm:w-auto text-[48px] md:text-[52px] lg:text-[72px] leading-[120%] md:tracking-[-2.16px] tracking-[-1.44px] text-center relative">
           Software Development <br />
           <span className="text-gradient">Modern Solution !</span>
-          <div className="hidden sm:block absolute -left-[10%] sm:-top-[20%] animate_dust_reverse -z-10">
+          {/* <div className="hidden sm:block absolute -left-[30%] sm:top-[20%] animate_dust_reverse -z-10">
             <Image
               src="/assets/images/star-dust-blue.svg"
               alt="Dust"
               width={200}
               height={200}
             />
-          </div>
+          </div> */}
           <div className="absolute -top-[10%] right-0 xl:-right-[20%] animate_dust -z-10">
             <Image
               src="/assets/images/stars-dust.svg"

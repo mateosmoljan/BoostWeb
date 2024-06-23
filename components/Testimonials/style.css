@@ -1,3 +1,8 @@
 .custom_dots li button:before{
     @apply  !text-white !text-[10px];
 }
+
+.custom_inset_shadow {
+   box-shadow:  inset 5.940000057220459px 5.940000057220459px 60.000003814697266px 0 rgba(12, 69, 231, .2),
+        -17.81999969482422px 23.760000228881836px 59.39999771118164px 0 rgba(1, 14, 91, .8);
+}

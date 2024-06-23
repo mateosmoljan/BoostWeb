@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image_email from "@/public/assets/images/email.png";
 import ContactForm from "../../components/Forms/ContactForm";
-
+import image1 from "@/public/assets/images/globeweb.png";
 function page() {
   return (
     <main className="container pt-20 md:pt-52">
@@ -9,7 +9,19 @@ function page() {
         <h2>Tell Us About Your Project</h2>
       </div>
       <section className="flex flex-col md:flex-row gap-8">
+        <div className=" bg-primary w-[150px] absolute h-1/2 top-1/2 -left-[100px]  blur-[200px] opacity-50" />
         <div className="w-full md:w-1/2">
+          <div className="hidden lg:block lg:w-[calc(var(--one)*108)] lg:h-[calc(var(--one)*108)] absolute bottom-[10%] left-[20%] opacity-40">
+            <Image
+              src={image1}
+              alt="Globe"
+              width={108}
+              height={108}
+              className="w-full h-full"
+              placeholder="blur"
+            />
+          </div>
+
           <div className="text-left ">
             <span className="text-secondary">What we’re offering</span>
             <h2 className="text-left my-5">

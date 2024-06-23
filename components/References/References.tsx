@@ -63,7 +63,19 @@ function ReferencesComponent() {
   return (
     <section className="container pt-20 md:pt-52">
       <div className=" flex flex-col gap-10">
-        <h2 className="text-center ">References</h2>
+        <div className=" bg-primary w-[150px] absolute h-1/2 top-0 -left-[100px]  blur-[200px] opacity-50" />
+        <h2 className="text-center relative">
+          References{" "}
+          <div className="-z-10 absolute -top-5 sm:-right-20 animate_dust">
+            <Image
+              src="/assets/images/stars-dust.svg"
+              alt="Logo BoostWeb"
+              width={300}
+              height={300}
+              className="rounded-full"
+            />
+          </div>
+        </h2>
         <div className="flex justify-center">
           <ul className="hidden md:flex items-center p-1.5 rounded-full border-2 border-white_hover gap-2 md:gap-4">
             {ReferencesTitleData.data.map((item, index) => (

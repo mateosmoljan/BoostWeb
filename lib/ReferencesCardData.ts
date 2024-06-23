@@ -39,7 +39,7 @@ type DataObject = {
   all: LinksData[];
   ecommerce: LinksData[];
   real_estate: LinksData[];
-  crypto: LinksData[];
+  blockchain: LinksData[];
   technology: LinksData[];
   other: LinksData[];
 };
@@ -85,11 +85,6 @@ export const ReferencesCardData: DataObject = {
       image: crypto1,
       title: "Title1",
       url: "https://halfshib.io",
-    },
-    {
-      image: sport1,
-      title: "Title1",
-      url: "https://mchezo.rw",
     },
     {
       image: sport1,
@@ -154,7 +149,7 @@ export const ReferencesCardData: DataObject = {
       url: "https://www.takeup.ai",
     },
   ],
-  crypto: [
+  blockchain: [
     {
       image: crypto1,
       title: "Crypto 1",

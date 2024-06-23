@@ -20,8 +20,8 @@ function ReferencesComponent() {
       return ReferencesCardData.all;
     } else if (activeReferences === "Real Estate") {
       return ReferencesCardData.real_estate;
-    } else if (activeReferences === "Crypto") {
-      return ReferencesCardData.crypto;
+    } else if (activeReferences === "Blockchain") {
+      return ReferencesCardData.blockchain;
     } else if (activeReferences === "E-commerce") {
       return ReferencesCardData.ecommerce;
     } else if (activeReferences === "Technology") {
@@ -35,7 +35,7 @@ function ReferencesComponent() {
   const fadeIn = {
     initial: {
       opacity: 0,
-      y: 100,
+      y: 80,
     },
     animate: (index: number) => ({
       opacity: 1,

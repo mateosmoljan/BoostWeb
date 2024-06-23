@@ -31,7 +31,7 @@ export const FaqData: DataObject = {
           target audience of the website and what are their needs. <br />
           <br />
           <span className="font-titleBold">Content:</span> What content will be
-          displayed on the page, including texts, images, and video content.{" "}
+          displayed on the page, including texts, images, and video content.
           <br />
           <br />
           <span className="font-titleBold">Functionality:</span> What
@@ -67,15 +67,10 @@ export const FaqData: DataObject = {
     {
       panelNumber: 6,
       title: "Website Maintenance Simplified",
-      des: `Website maintenance involves regular updates to software, security
+      des: `Website maintenance involves website hosting , regular updates to software, security
           monitoring, content updates, and performance optimization. Our
           dedicated team ensures your website remains secure, up-to-date, and
           running smoothly.
-          <br />
-          <br />
-          We provide website maintenance services with straightforward pricing.
-          For smaller projects, we provide fixed pricing, while larger projects
-          receive custom quotes.
           <br />
           <br />
           Investing in website maintenance enhances user experience, protects

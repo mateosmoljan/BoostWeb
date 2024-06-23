@@ -22,7 +22,7 @@ export const ServicesCardData: DataObject = {
       bg_image: "/assets/images/svgs/services2.svg",
       image: "/assets/images/svgs/services22.svg",
       title: "Web Development",
-      des: "We deliver high-fidelity software solutions for web, mobile, and desktops mapped onto your unique business processes. We build, modernize, optimize and scale your business apps using the latest SDLC tools and cross-platform technologies.",
+      des: "We deliver high-fidelity software solutions for web, mobile, and desktops mapped onto your unique business processes. We build, modernize, optimize and scale your business apps using cross-platform technologies.",
     },
     {
       bg_image: "/assets/images/svgs/services3.svg",

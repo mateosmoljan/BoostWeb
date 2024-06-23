@@ -89,7 +89,7 @@ export const ReferencesCardData: DataObject = {
     {
       image: accommodation1,
       title: "Title1",
-      url: "https://villapanoramaistria.com",
+      url: "",
     },
     {
       image: accommodation1,

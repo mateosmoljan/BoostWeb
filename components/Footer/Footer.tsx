@@ -61,7 +61,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="flex gap-4 ">
+          {/* <div className="flex gap-4 ">
             {socialsData.data.map((item, index) => (
               <a
                 key={index}
@@ -73,7 +73,7 @@ function Footer() {
                 {item.icon}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 

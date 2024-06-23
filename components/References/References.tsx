@@ -77,6 +77,7 @@ function ReferencesComponent() {
               custom={index}
               key={`${activeReferences}-${index}`}
               href={item.url}
+              target="_blank"
               className=" rounded-2xl"
             >
               <div className="mx-auto rounded-2xl overflow-hidden relative">

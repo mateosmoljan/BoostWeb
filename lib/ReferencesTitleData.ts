@@ -9,10 +9,10 @@ type DataObject = {
 export const ReferencesTitleData: DataObject = {
   data: [
     { title: "All" },
-    { title: "Accommodation" },
-    { title: "Crypto" },
     { title: "E-commerce" },
-    { title: "AI" },
-    // { title: "Other" },
+    { title: "Technology" },
+    { title: "Real Estate" },
+    { title: "Crypto" },
+    { title: "Other" },
   ],
 };

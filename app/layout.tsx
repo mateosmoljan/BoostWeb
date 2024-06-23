@@ -6,6 +6,7 @@ import Navbar from "@/components/Nav/Nav";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import Footer from "@/components/Footer/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalitics";
+import ToTop from "@/components/ToTop/ToTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -82,6 +83,7 @@ export default function RootLayout({
           <AppRouterCacheProvider>
             <Navbar />
             {children}
+            <ToTop />
             <Footer />
           </AppRouterCacheProvider>
         </body>

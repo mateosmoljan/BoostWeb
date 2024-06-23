@@ -18,18 +18,17 @@ function ReferencesComponent() {
   const referencesData = () => {
     if (activeReferences === "All") {
       return ReferencesCardData.all;
-    } else if (activeReferences === "Accommodation") {
-      return ReferencesCardData.accommodation;
+    } else if (activeReferences === "Real Estate") {
+      return ReferencesCardData.real_estate;
     } else if (activeReferences === "Crypto") {
       return ReferencesCardData.crypto;
     } else if (activeReferences === "E-commerce") {
       return ReferencesCardData.ecommerce;
-    } else if (activeReferences === "AI") {
-      return ReferencesCardData.ai;
+    } else if (activeReferences === "Technology") {
+      return ReferencesCardData.technology;
+    } else if (activeReferences === "Other") {
+      return ReferencesCardData.other;
     }
-    // else if (activeReferences === "Other") {
-    //   return ReferencesCardData.other;
-    // }
   };
   const References = referencesData() || ReferencesCardData.all;
 
@@ -121,7 +120,7 @@ function ReferencesComponent() {
             </motion.ul>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 transition-all duration-500">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 transition-all duration-500">
           {References.map((item, index) => (
             <motion.a
               variants={fadeIn}
@@ -132,16 +131,16 @@ function ReferencesComponent() {
               key={`${activeReferences}-${index}`}
               href={item.url}
               target="_blank"
-              className=" rounded-2xl"
+              className=" rounded-2xl hover:shadow-[inset 0 0  10px #ffffff]"
             >
-              <div className="mx-auto rounded-2xl overflow-hidden relative">
+              <div className="mx-auto rounded-2xl overflow-hidden relative hover:shadow-[inset 0 0 10px #ffffff]">
                 <Image
                   src={item.image}
                   alt={item.title}
                   width={400}
                   height={400}
                   placeholder="blur"
-                  className="w-full h-full"
+                  className="w-full h-full hover:shadow-[inset 0 0 10px #ffffff]"
                 />
                 <div className="absolute bottom-3 right-3 md:bottom-6 md:right-6 bg-blue p-2 rounded-full">
                   <FaArrowRight className="text-white" />

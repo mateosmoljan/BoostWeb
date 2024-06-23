@@ -33,8 +33,8 @@ function About() {
           </p>
           <hr className="bg-gradient-blue-linear-right w-full h-[2px]" />
           <button className="flex">
-            <Link href="/team" className="btn">
-              Meet The Team
+            <Link href="/contact" className="btn">
+              Start Project
             </Link>
           </button>
         </div>

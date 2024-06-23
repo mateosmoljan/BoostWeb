@@ -16,12 +16,13 @@ function ReferencesComponent() {
     } else if (activeReferences === "Crypto") {
       return ReferencesCardData.crypto;
     } else if (activeReferences === "Education") {
-      return ReferencesCardData.education;
+      return ReferencesCardData.ecommerce;
     } else if (activeReferences === "AI") {
       return ReferencesCardData.ai;
-    } else if (activeReferences === "Other") {
-      return ReferencesCardData.other;
     }
+    // else if (activeReferences === "Other") {
+    //   return ReferencesCardData.other;
+    // }
   };
   const References = referencesData() || ReferencesCardData.all;
 

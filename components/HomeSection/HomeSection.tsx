@@ -7,8 +7,8 @@ import image1 from "@/public/assets/images/globeweb.png";
 function HomeSection() {
   return (
     <section className="h-screen w-full flex flex-col items-center relative ">
-      <div className="bg-primary w-[150px] absolute h-1/2 top-1/2 -left-[100px]  blur-[200px] opacity-50" />
-      <div className="bg-primary w-[200px] absolute h-1/3 -right-[100px]  blur-[150px] opacity-50" />
+      <div className=" bg-primary w-[150px] absolute h-1/2 top-1/2 -left-[100px]  blur-[200px] opacity-50" />
+      <div className=" bg-primary w-[200px] absolute h-1/3 right-0  blur-[150px] opacity-50" />
       <div className="hidden lg:block lg:w-[calc(var(--one)*56)] lg:h-[calc(var(--one)*56)] absolute top-[10%] right-[30%] opacity-40">
         <Image
           src={image1}
@@ -43,7 +43,7 @@ function HomeSection() {
         <h1 className="w-[90%] sm:w-auto text-[48px] md:text-[52px] lg:text-[72px] leading-[120%] md:tracking-[-2.16px] tracking-[-1.44px] text-center relative">
           Software Development <br />
           <span className="text-gradient">Modern Solution !</span>
-          <div className="absolute -left-[10%] -top-[20%] animate_dust_reverse">
+          <div className="absolute -left-[10%] -top-[20%] animate_dust_reverse -z-10">
             <Image
               src="/assets/images/star-dust-blue.svg"
               alt="Dust"
@@ -51,7 +51,7 @@ function HomeSection() {
               height={200}
             />
           </div>
-          <div className="absolute -top-[10%] -right-[20%] animate_dust">
+          <div className="absolute -top-[10%] right-0 xl:-right-[20%] animate_dust -z-10">
             <Image
               src="/assets/images/stars-dust.svg"
               alt="Dust"

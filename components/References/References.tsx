@@ -5,8 +5,15 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { AiFillCaretUp } from "react-icons/ai";
 function ReferencesComponent() {
   const [activeReferences, setActiveReferences] = useState<string>("All");
+  const [openSelect, setOpenSelect] = useState<boolean>(false);
+
+  const handleOpenSelect = (title: string) => {
+    setActiveReferences(title);
+    setOpenSelect(false);
+  };
 
   const referencesData = () => {
     if (activeReferences === "All") {
@@ -15,7 +22,7 @@ function ReferencesComponent() {
       return ReferencesCardData.accommodation;
     } else if (activeReferences === "Crypto") {
       return ReferencesCardData.crypto;
-    } else if (activeReferences === "Education") {
+    } else if (activeReferences === "E-commerce") {
       return ReferencesCardData.ecommerce;
     } else if (activeReferences === "AI") {
       return ReferencesCardData.ai;
@@ -40,14 +47,26 @@ function ReferencesComponent() {
     }),
   };
 
+  const dropDown = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05,
+      },
+    }),
+  };
+
   return (
-    <section className="container pt-52">
+    <section className="container pt-20 md:pt-52">
       <div className=" flex flex-col gap-10">
-        <div>
-          <h2>References</h2>
-        </div>
+        <h2 className="text-center ">References</h2>
         <div className="flex justify-center">
-          <ul className=" flex items-center p-1.5 rounded-full border-2 border-white_hover gap-2 md:gap-4">
+          <ul className="hidden md:flex items-center p-1.5 rounded-full border-2 border-white_hover gap-2 md:gap-4">
             {ReferencesTitleData.data.map((item, index) => (
               <motion.li
                 variants={fadeIn}
@@ -67,6 +86,40 @@ function ReferencesComponent() {
               </motion.li>
             ))}
           </ul>
+          <div className="relative flex md:hidden w-[225px]">
+            <h3
+              className="w-[225px] text-xl relative flex justify-center items-center gap-2 p-3 rounded-2xl border-2 border-white_hover"
+              onClick={() => setOpenSelect(!openSelect)}
+            >
+              {activeReferences}{" "}
+              <AiFillCaretUp
+                className={`text-gray-400 translate-all ${
+                  openSelect ? "rotate-180 " : " "
+                }`}
+              />
+            </h3>
+            <motion.ul
+              variants={dropDown}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: false }}
+              className={`overflow-hidden w-[225px] bg-white top-[100%] z-10 absolute items-center justify-center flex-col gap-3 py-1.5 rounded-2xl ${
+                openSelect ? "flex" : "hidden"
+              }`}
+            >
+              {ReferencesTitleData.data.map((item, index) => (
+                <li
+                  key={index}
+                  className={`w-full text-center ${
+                    activeReferences === item.title ? "bg-gray-400" : ""
+                  } z-20 cursor-pointer text-xl relative block leading-7 px-6 py-2`}
+                  onClick={() => handleOpenSelect(item.title)}
+                >
+                  <span className="text-black">{item.title}</span>
+                </li>
+              ))}
+            </motion.ul>
+          </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 transition-all duration-500">
           {References.map((item, index) => (

@@ -11,7 +11,7 @@ export const ReferencesTitleData: DataObject = {
     { title: "All" },
     { title: "Accommodation" },
     { title: "Crypto" },
-    { title: "Education" },
+    { title: "E-commerce" },
     { title: "AI" },
     // { title: "Other" },
   ],

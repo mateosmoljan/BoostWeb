@@ -4,7 +4,7 @@ import ContactForm from "../../components/Forms/ContactForm";
 import image1 from "@/public/assets/images/globeweb.png";
 function page() {
   return (
-    <main className="container pt-20 md:pt-52">
+    <main className="container pt-32 md:pt-52">
       <div className="mb-8 md:mb-16">
         <h2>Tell Us About Your Project</h2>
       </div>

@@ -61,7 +61,7 @@ function ReferencesComponent() {
   };
 
   return (
-    <section className="container pt-20 md:pt-52">
+    <section className="container pt-32 md:pt-52">
       <div className=" flex flex-col gap-10">
         <div className=" bg-primary w-[150px] absolute h-1/2 top-0 -left-[100px]  blur-[200px] opacity-50" />
         <h2 className="text-center relative">

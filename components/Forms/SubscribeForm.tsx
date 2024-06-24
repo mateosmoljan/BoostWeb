@@ -11,8 +11,8 @@ function SubscribeForm() {
   const [value, setValue] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
-  const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID_SEC;
-  const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID_SEC;
+  const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVIC_SEC;
+  const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_SEC;
   const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY_SEC;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {

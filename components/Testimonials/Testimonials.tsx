@@ -6,7 +6,7 @@ function Testimonials() {
   return (
     <section id="testimonials" className="w-full py-20">
       <div className="w-full">
-        <div className="container flex flex-col gap-4 items-center">
+        <div className="mb-14 container flex flex-col gap-4 items-center">
           <h2 className="">
             What Our
             <span className="text-gradient"> Clients Say </span>
@@ -17,7 +17,7 @@ function Testimonials() {
             achieve their full potential.
           </p>
         </div>
-        <div className="relative flex justify-center mt-40">
+        <div className="relative flex justify-center">
           <TestimonialsSlider />
         </div>
       </div>

@@ -17,7 +17,7 @@ function SampleNextArrow(props: any) {
       onClick={onClick}
     >
       <div>
-        <FaArrowRight className="text-[24px] text-white" />
+        <FaArrowRight className="text-[24px] text-gray-400" />
       </div>
     </div>
   );
@@ -47,26 +47,25 @@ function TestimonialsSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    adaptiveHeight: true,
     pauseOnHover: true,
     arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1300,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
         },
@@ -74,7 +73,7 @@ function TestimonialsSlider() {
     ],
   };
   return (
-    <div className="w-full relative overflow-visible">
+    <div className="w-full ">
       <div className="w-[30%] h-full absolute left-0 z-10">
         <Image
           src={shadow}
@@ -86,8 +85,8 @@ function TestimonialsSlider() {
       </div>
       <Slider {...settings}>
         {TestimonialsSliderData.data.map((item, index) => (
-          <div key={index} className="!mx-10">
-            <div className=" relative h-[450px] max-w-[400px] custom_inset_shadow p-4 md:p-6 rounded-2xl overflow-visible">
+          <div key={index} className="!px-5">
+            <div className="  h-[450px] max-w-[400px] custom_inset_shadow p-4 md:p-6 rounded-2xl">
               <div className="h-[450px] flex flex-col  justify-between">
                 <p className="text-left">{item.des}</p>
                 <div className="absolute bottom-10 flex flex-col items-start justify-start gap-2 uppercase">
@@ -102,10 +101,10 @@ function TestimonialsSlider() {
       <div className="w-[30%] h-full absolute right-0 top-0 z-10">
         <Image
           src={shadow}
-          alt="shadow left"
+          alt="shadow right"
           width={128}
           height={210}
-          className="h-full w-full rotate-180"
+          className="h-full w-full rotate-180 "
         />
       </div>
     </div>

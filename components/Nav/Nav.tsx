@@ -108,7 +108,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex">
             <Link href="/contact" className="btn ml-4 !py-2.5">
-              Contact
+              Start Project
             </Link>
           </div>
 
@@ -152,7 +152,7 @@ const Navbar = () => {
             ))}
             <li className="flex pl-3 pt-4" onClick={() => setOpen(false)}>
               <Link href="/contact" className="btn !text-xl !py-3 !px-6">
-                Contact
+                Start Project
               </Link>
             </li>
           </ul>

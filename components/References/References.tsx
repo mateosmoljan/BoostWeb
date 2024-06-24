@@ -143,16 +143,16 @@ function ReferencesComponent() {
               key={`${activeReferences}-${index}`}
               href={item.url}
               target="_blank"
-              className=" rounded-2xl hover:shadow-[inset 0 0  10px #ffffff]"
+              className=" rounded-2xl"
             >
-              <div className="mx-auto rounded-2xl overflow-hidden relative hover:shadow-[inset 0 0 10px #ffffff]">
+              <div className=" mx-auto rounded-2xl overflow-hidden relative">
                 <Image
                   src={item.image}
                   alt={item.title}
                   width={400}
                   height={400}
                   placeholder="blur"
-                  className="w-full h-full hover:shadow-[inset 0 0 10px #ffffff]"
+                  className="-z-20 w-full  h-full hover:opacity-80"
                 />
                 <div className="absolute bottom-3 right-3 md:bottom-6 md:right-6 bg-blue p-2 rounded-full">
                   <FaArrowRight className="text-white" />

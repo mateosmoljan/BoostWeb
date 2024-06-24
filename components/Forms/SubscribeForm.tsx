@@ -11,7 +11,7 @@ function SubscribeForm() {
   const [value, setValue] = React.useState("");
   const [open, setOpen] = React.useState(false);
 
-  const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVIC_SEC;
+  const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_SEC;
   const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_SEC;
   const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY_SEC;
 
@@ -49,6 +49,7 @@ function SubscribeForm() {
           type="email"
           placeholder="Email"
           name="email"
+          required
           className="w-full rounded-full p-4 mb-6 bg-transparent border-2 border-white text-white"
         />
         <button className={`${open ? "hidden" : "btn"}`}>Subscribe</button>

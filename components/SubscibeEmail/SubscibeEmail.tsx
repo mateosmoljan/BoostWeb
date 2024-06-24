@@ -1,6 +1,7 @@
 import Image from "next/image";
 import image2 from "@/public/assets/images/object.png";
 import image1 from "@/public/assets/images/subscribe.png";
+import SubscribeForm from "../Forms/SubscribeForm";
 function SubscibeEmail() {
   return (
     <section className="w-full relative">
@@ -12,16 +13,7 @@ function SubscibeEmail() {
               to keep up to date with the BoostWeb.io
             </span>
           </h2>
-          <form action="" className="">
-            <div className="w-full">
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full rounded-full p-4 mb-6 bg-transparent border-2 border-white text-white"
-              />
-              <button className="btn">Subscribe</button>
-            </div>
-          </form>
+          <SubscribeForm />
         </div>
         <div className=" absolute sm:relative sm:block w-1/2 h-[250px] right-0 bottom-0">
           <Image

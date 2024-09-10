@@ -1,5 +1,5 @@
 export interface Post {
-  title: string
+  title: string;
   slug: { current: string };
   publishedAt: string;
   excerpt: string;
@@ -8,13 +8,14 @@ export interface Post {
   _id: string;
   headings?: Array<HTMLHeadElement | string>;
   comments?: Array<Comment>;
+  image?: string;
 }
 
 export interface Tag {
   name: string;
   slug: { current: string };
   _id: string;
-  postCount?: number
+  postCount?: number;
 }
 
 export interface Comment {

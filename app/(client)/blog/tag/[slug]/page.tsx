@@ -26,17 +26,42 @@ async function getPostsByTag(tag: string) {
 export const revalidate = 60;
 
 export async function generateMetadata({ params }: Params) {
+  const tag = params.slug;
+
   return {
-    title: `#${params.slug}`,
-    description: `Posts with the tag ${params.slug}`,
+    title: `Posts with the tag #${tag} | BoostWeb`,
+    description: `Explore blog posts tagged with #${tag} on BoostWeb. Find content related to ${tag} easily.`,
     openGraph: {
-      title: `#${params.slug}`,
-      description: `Posts with the tag ${params.slug}`,
+      title: `Posts with the tag #${tag} | BoostWeb`,
+      description: `Explore blog posts tagged with #${tag} on BoostWeb. Find content related to ${tag} easily.`,
       type: "website",
       locale: "en_US",
-      url: `http://localhost:3000/${params.slug}`,
-      siteName: "DevBlook",
+      url: `https://www.boostweb.io/tag/${tag}`, // Ensure you use the full production URL
+      siteName: "BoostWeb",
+      images: [
+        {
+          url: `https://www.boostweb.io/assets/images/Logo_White_bg_Dark.png`, // Optional: dynamic image URL if applicable
+          width: 500,
+          height: 500,
+          alt: `Tag #${tag} - BoostWeb`, // Provide descriptive alt text
+        },
+      ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `Posts with the tag #${tag} | BoostWeb`,
+      description: `Explore blog posts tagged with #${tag} on BoostWeb. Find content related to ${tag} easily.`,
+      images: [`https://www.boostweb.io/assets/images/Logo_White_bg_Dark.png`], // Use a consistent image URL
+    },
+    alternates: {
+      canonical: `https://www.boostweb.io/tag/${tag}`, // Use the production URL
+    },
+    keywords: [
+      `${tag} tag`,
+      `blog posts ${tag}`,
+      `BoostWeb ${tag}`,
+      `posts with ${tag}`,
+    ], // Include relevant keywords
   };
 }
 

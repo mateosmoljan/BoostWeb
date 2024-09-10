@@ -58,27 +58,51 @@ export async function generateMetadata({
     return;
   }
 
+  const postUrl = `https://www.boostweb.io/blog/${params.slug}`;
+
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: `${post.title} | BoostWeb Blog`,
+    description: post.excerpt || "Read more about this topic on BoostWeb Blog.",
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: `${post.title} | BoostWeb Blog`,
+      description:
+        post.excerpt || "Read more about this topic on BoostWeb Blog.",
       type: "article",
       locale: "en_US",
-      url: `http://localhost:3000/${params.slug}`,
-      siteName: "DevBlook",
+      url: postUrl,
+      siteName: "BoostWeb",
       images: [
-        // {
-        //   url: post.image,
-        // }
-        // {
-        //   url: urlForImage(post?.body?.find((b: any) => b._type === "image")).width(1200).height(630).url(),
-        //   width: 1200,
-        //   height: 630,
-        // },
+        {
+          url:
+            post.image ||
+            `https://www.boostweb.io/assets/images/Logo_White_bg_Dark.png`, // Fallback image URL
+          width: 1200,
+          height: 630,
+          alt: `Featured image for ${post.title} - BoostWeb Blog`, // Descriptive alt text
+        },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | BoostWeb Blog`,
+      description:
+        post.excerpt || "Read more about this topic on BoostWeb Blog.",
+      images: [
+        post.image ||
+          `https://www.boostweb.io/assets/images/Logo_White_bg_Dark.png`,
+      ], // Fallback image URL
+    },
+    alternates: {
+      canonical: postUrl, // Ensure the canonical URL is consistent
+    },
+    keywords: [
+      `${post.title}`, // Title as a keyword
+      `${post.excerpt?.slice(0, 100)}`, // First part of the excerpt for additional context
+      "BoostWeb blog", // Brand and blog type
+      "BoostWeb", // Brand name
+      "blog post", // Generic term
+      "content", // Broad term
+    ],
   };
 }
 

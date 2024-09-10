@@ -7,6 +7,7 @@ export const post = {
   type: "document",
 
   fields: [
+    { name: "image", type: "image", title: "Image for SEO" },
     {
       name: "title",
       title: "Title",

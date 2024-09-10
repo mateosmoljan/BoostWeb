@@ -7,7 +7,6 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import Footer from "@/components/Footer/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalitics";
 import ToTop from "@/components/ToTop/ToTop";
-import Script from "next/script";
 import siteMetadata from "@/utils/siteMetaData";
 
 const poppins = Poppins({
@@ -20,7 +19,7 @@ export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title, // a default is required when creating a template
+    default: siteMetadata.title,
   },
   description: siteMetadata.description,
   openGraph: {
@@ -28,7 +27,14 @@ export const metadata = {
     description: siteMetadata.description,
     url: siteMetadata.siteUrl,
     siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    images: [
+      {
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`, // Full URL for the image
+        width: 1200,
+        height: 630,
+        alt: `${siteMetadata.title} Social Banner`,
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -42,13 +48,35 @@ export const metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
+      noarchive: true,
+      nosnippet: true,
     },
   },
   twitter: {
     card: "summary_large_image",
     title: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    description: siteMetadata.description,
+    images: [
+      {
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`, // Full URL for the image
+        alt: `${siteMetadata.title} Social Banner`,
+      },
+    ],
+    site: `@${siteMetadata.twitter.replace("https://x.com/", "")}`,
   },
+  keywords: [
+    "BoostWeb",
+    "online presence solutions",
+    "website creation packages",
+    "blockchain crypto tokens",
+    "website maintenance",
+    "accommodation websites",
+    "construction websites",
+    "restaurant websites",
+    "salon websites",
+    "digital marketing",
+    "business growth",
+  ],
 };
 
 export default function RootLayout({

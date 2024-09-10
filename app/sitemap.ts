@@ -3,6 +3,7 @@ import { MetadataRoute } from "next";
 import { Post } from "./utils/interface";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Fetching blog posts from Sanity CMS
   async function getPosts() {
     const query = `
     *[_type == "post"] {
@@ -21,22 +22,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return data;
   }
 
+  // Get posts from CMS
   const posts: Post[] = await getPosts();
 
+  // Generate URLs for blog posts
   const postUrls = posts.map((post) => ({
-    url: `https://next-cms-blog-ce.vercel.app/${post.slug.current}`,
+    url: `https://www.boostweb.io/blog/${post.slug.current}`,
     lastModified: new Date(post.publishedAt),
   }));
 
+  // Manually add static pages like /services, /contact, and /references
+  const staticPages = [
+    {
+      url: `https://www.boostweb.io/contact`,
+      lastModified: new Date(),
+    },
+    {
+      url: `https://www.boostweb.io/references`,
+      lastModified: new Date(),
+    },
+  ];
+
   return [
     {
-      url: `https://next-cms-blog-ce.vercel.app/`,
+      url: `https://www.boostweb.io/`,
       lastModified: new Date(),
     },
     {
-      url: "https://next-cms-blog-ce.vercel.app/tag",
+      url: "https://www.boostweb.io/tag",
       lastModified: new Date(),
     },
-    ...postUrls,
+    ...staticPages, // Add static pages
+    ...postUrls, // Add dynamically generated blog posts
   ];
 }

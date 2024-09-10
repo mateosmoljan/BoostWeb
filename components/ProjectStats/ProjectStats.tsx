@@ -36,12 +36,12 @@ function ProjectStats() {
                 key={index}
                 className="flex flex-col items-center gap-4 w-full md:w-1/4"
               >
-                <p className="text-center">{item.title}</p>
+                <p className="text-center text-gray-400">{item.title}</p>
                 <h2 className="!text-3xl">{item.value}</h2>
               </div>
             ))}
           </div>
-          <p className="text-center md:text-[24px] text-[18px] leading-8">
+          <p className="text-center md:text-[24px] text-[18px] leading-8 text-gray-400">
             Transforming your business processes for the digital future. We
             provide dedicated resources and staff augmentation to enterprises
             worldwide for IT support and success.

@@ -37,7 +37,7 @@ function ServicesSection() {
             />
           </div>
           <h2 className="text-center lg:text-left ">What We Do</h2>
-          <p className="text-center lg:text-left mb-5">
+          <p className="text-center lg:text-left mb-5 text-gray-400">
             Our services include developing robust software, enhancing business
             processes, and delivering top-tier technical support to ensure your
             business thrives in the digital age.
@@ -76,7 +76,7 @@ function ServicesSection() {
               </div>
               <div className="lg:w-[80%] flex flex-col gap-3 lg:gap-[calc(var(--one)*20)]">
                 <h4>{item.title}</h4>
-                <p>{item.des}</p>
+                <p className="text-gray-400">{item.des}</p>
               </div>
             </div>
           ))}

@@ -13,5 +13,6 @@ export const linksData: DataObject = {
     { path: "/#services", titles: "Services" },
     { path: "/references", titles: "References" },
     { path: "/#faq", titles: "Faq" },
+    { path: "/blog", titles: "Blog" },
   ],
 };

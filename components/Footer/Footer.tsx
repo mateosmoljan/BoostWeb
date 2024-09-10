@@ -6,8 +6,8 @@ import image1 from "@/public/assets/images/logo.png";
 function Footer() {
   return (
     <footer className="mt-32 relative">
-      <div className="absolute w-[300px] h-[300px] blur-3xl  opacity-30 rounded-full bg-gradient-blue -top-10 -left-20 z-10" />
-      <div className="w-full bg-gray2 py-12">
+      <div className="absolute w-full h-[300px] blur-3xl  opacity-30  bg-gradient-blue -top-10 left-0 -inset-9 -z-10" />
+      <div className="w-full bg-gray2 py-12 z-30">
         <div className="container flex justify-between flex-col  gap-8 items-center">
           <div className=" mb-5 flex items-center gap-2 ">
             <div className="lg:w-[50px] lg:h-[50px] w-[40px] h-[40px]">
@@ -25,7 +25,7 @@ function Footer() {
             </span>
           </div>
           <div>
-            <ul className=" flex flex-col sm:flex-row gap-3">
+            <ul className=" flex flex-col sm:flex-row gap-3 z-30">
               <li className="text-center sm:pr-[calc(var(--one)*40)] sm:border-r-[1px] sm:border-gray-400">
                 <a
                   href="/"
@@ -51,7 +51,7 @@ function Footer() {
                   References
                 </a>
               </li>
-              <li className=" text-center sm:px-[calc(var(--one)*40)]">
+              <li className=" text-center sm:px-[calc(var(--one)*40)] sm:border-r-[1px] sm:border-gray-400">
                 <a
                   href="/#faq"
                   className="hover:underline opacity-60 hover:opacity-100"
@@ -59,9 +59,17 @@ function Footer() {
                   Faq
                 </a>
               </li>
+              <li className=" text-center sm:px-[calc(var(--one)*40)]">
+                <a
+                  href="/blog"
+                  className="hover:underline opacity-60 hover:opacity-100"
+                >
+                  Blog
+                </a>
+              </li>
               <li className=" text-center sm:pl-[calc(var(--one)*40)] sm:border-l-[1px] sm:border-gray-400">
                 <a
-                  href="/#faq"
+                  href="/contact"
                   className="hover:underline opacity-60 hover:opacity-100"
                 >
                   Start Project
@@ -87,7 +95,7 @@ function Footer() {
 
       <div className="w-screen py-6 border-t-[1px] border-gray-400 -z-10">
         <div className="container flex justify-center text-sm items-center">
-          <p>
+          <p className="text-gray-400">
             All Rights Reservd{" "}
             <span className="text-gradient">BoostWeb.io</span> 2024
           </p>

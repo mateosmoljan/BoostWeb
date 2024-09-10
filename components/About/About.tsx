@@ -20,12 +20,12 @@ function About() {
               />
             </div>
           </h2>
-          <p className="">
+          <p className="text-gray-400">
             We do not use website builders such as Wordpress, Wix, Squarespace
             or Elementor. If they were so great, why is Facebook, TikTok, and
             Netflix using the same frameworks as us?
           </p>
-          <p>
+          <p className="text-gray-400">
             Everything we do is built using custom, open-source technologies
             that are designed to fit your needs, not ours. Our process is always
             on the cutting edge of what is possible within the web development

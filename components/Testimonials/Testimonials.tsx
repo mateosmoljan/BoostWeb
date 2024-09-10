@@ -12,7 +12,7 @@ function Testimonials() {
             <span className="text-gradient"> Clients Say </span>
             About US?
           </h2>
-          <p className="text-center max-w-[500px]">
+          <p className="text-center max-w-[500px] text-gray-400">
             Discover how our expert IT support services have helped businesses
             achieve their full potential.
           </p>

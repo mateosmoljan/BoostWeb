@@ -88,10 +88,10 @@ function TestimonialsSlider() {
           <div key={index} className="!px-5">
             <div className="  h-[450px] max-w-[400px] custom_inset_shadow p-4 md:p-6 rounded-2xl">
               <div className="h-[450px] flex flex-col  justify-between">
-                <p className="text-left">{item.des}</p>
+                <p className="text-left text-gray-400">{item.des}</p>
                 <div className="absolute bottom-10 flex flex-col items-start justify-start gap-2 uppercase">
                   <span>{item.name}</span>
-                  <p className="text-sm">{item.industry}</p>
+                  <p className="text-sm text-gray-400">{item.industry}</p>
                 </div>
               </div>
             </div>

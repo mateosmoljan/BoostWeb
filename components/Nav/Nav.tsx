@@ -9,6 +9,7 @@ import Link from "next/link";
 import Drawer from "@mui/joy/Drawer";
 import { linksData } from "@/lib/Links";
 import { FaArrowRight } from "react-icons/fa6";
+// import ThemeSwitch from "./ThemeSwitch";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -63,8 +64,8 @@ const Navbar = () => {
     <section
       className={`w-full fixed z-50 ${windowScrolled ? "" : "bg-blue"}
         ${!windowScrolled || open ? "bg-blue" : ""} ${
-        visible ? "transleteNavUp" : "transleteNav"
-      }`}
+          visible ? "transleteNavUp" : "transleteNav"
+        }`}
     >
       <nav
         className={` px-6 py-6  max-w-[1536px] md:mx-auto w-full left-0
@@ -104,6 +105,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              {/* <ThemeSwitch /> */}
             </div>
           </div>
           <div className="hidden lg:flex">
@@ -156,6 +158,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          {/* <ThemeSwitch /> */}
         </div>
       </Drawer>
     </section>

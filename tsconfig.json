@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "contentlayer.config.ts", "components/Blogs/Home/HomeCoverSection.jsx", "app/blogs/[slug]/page.jsx", "utils/siteMetaData.js", "utils/index.jsx", "components/Blogs/Home/FeaturedPosts.jsx", "components/Blogs/Home/RecentPosts.jsx", "components/Blogs/Hooks/useThemeSwitch.jsx", "components/Blogs/Icons.jsx", "components/Blogs/Blog/ViewCounter.jsx", "components/Blogs/Blog/RenderMdx.jsx", "components/Blogs/Blog/Category.jsx", "components/Blogs/Blog/Categories.jsx", "components/Blogs/Blog/BlogLayoutTwo.jsx", "components/Blogs/Blog/BlogLayoutThree.jsx", "components/Blogs/Blog/BlogLayoutOne.jsx", "components/Blogs/Blog/BlogDetails.jsx"],
   "exclude": ["node_modules"]
 }

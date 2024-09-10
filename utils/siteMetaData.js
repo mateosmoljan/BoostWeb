@@ -1,6 +1,6 @@
 // please update required information
 const siteMetadata = {
-  title: "BoostWeb: Fast, Easy, and Comprehensive Online Presence Solutions",
+  title: "BoostWeb: Fast & Reliable",
   author: "BoostWeb",
   headerTitle: "BoostWeb",
   description:

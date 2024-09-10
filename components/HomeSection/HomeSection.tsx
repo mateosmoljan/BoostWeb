@@ -62,9 +62,8 @@ function HomeSection() {
         </h1>
         <div className="flex justify-center">
           <p className="leading-[130%] w-[90%] sm:w-auto text-gray-400 max-w-[577px] text-center md:text-[24px] text-[18px]">
-            We help enterprises through custom business solutions and provide IT
-            outsourcing services to companies with agility, quality, and
-            commitment.
+            Ready-to-use packages that help businesses quickly establish and
+            enhance their online presence
           </p>
         </div>
         <div className="flex justify-center gap-8 relative flex-col sm:flex-row w-full  items-center">

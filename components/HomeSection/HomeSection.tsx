@@ -62,27 +62,27 @@ function HomeSection() {
         </h1>
         <div className="flex justify-center">
           <p className="leading-[130%] w-[90%] sm:w-auto text-gray-400 max-w-[577px] text-center md:text-[24px] text-[18px]">
-            Ready-to-use packages that help businesses quickly establish and
-            enhance their online presence
+            Ready-to-use software package that help businesses quickly establish
+            and enhance their online presence
           </p>
         </div>
         <div className="flex justify-center gap-8 relative flex-col sm:flex-row w-full  items-center">
           <button className="custom_gradient_box relative p-2 w-[90%] sm:w-auto">
             <Link
-              href="/contact"
+              href="/services"
               className=" btn z-10 flex gap-2 relative items-center justify-center text-[14px] !text-center leading-8 md:text-lg"
             >
-              Free Consultation <FaArrowRight />
+              Explore Softwares <FaArrowRight />
             </Link>
           </button>
-          <button className="w-[90%] sm:w-auto">
+          {/* <button className="w-[90%] sm:w-auto">
             <Link
               href="/#about"
               className="btn flex gap-2 items-center border-white border-2 justify-center !bg-transparent !text-white text-[14px] leading-8 md:text-lg"
             >
               Explore <FaArrowRight />
             </Link>
-          </button>
+          </button> */}
         </div>
         <div>
           <SeeMore />

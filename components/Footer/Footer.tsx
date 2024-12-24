@@ -59,14 +59,14 @@ function Footer() {
                   Faq
                 </a>
               </li>
-              <li className=" text-center sm:px-[calc(var(--one)*40)]">
+              {/* <li className=" text-center sm:px-[calc(var(--one)*40)]">
                 <a
                   href="/blog"
                   className="hover:underline opacity-60 hover:opacity-100"
                 >
                   Blog
                 </a>
-              </li>
+              </li> */}
               <li className=" text-center sm:pl-[calc(var(--one)*40)] sm:border-l-[1px] sm:border-gray-400">
                 <a
                   href="/contact"

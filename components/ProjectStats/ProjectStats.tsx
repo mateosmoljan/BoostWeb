@@ -26,8 +26,7 @@ function ProjectStats() {
         <div className="w-full md:w-[80%] flex justify-center flex-col items-center m-auto gap-10 sm:gap-16">
           <div>
             <h2>
-              Empowering Enterprises with Digital Transformation and{" "}
-              <span className="text-gradient">Global IT Support Solutions</span>
+              <span className="text-gradient">Global</span> IT Support Solutions
             </h2>
           </div>
           <div className="grid gap-4 md:grid-0 grid-cols-2 md:flex md:divide-x divide-gray-200 w-full justify-between">

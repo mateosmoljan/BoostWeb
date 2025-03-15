@@ -69,10 +69,10 @@ function HomeSection() {
         <div className="flex justify-center gap-8 relative flex-col sm:flex-row w-full  items-center">
           <button className="custom_gradient_box relative p-2 w-[90%] sm:w-auto">
             <Link
-              href="/services"
+              href="/contact"
               className=" btn z-10 flex gap-2 relative items-center justify-center text-[14px] !text-center leading-8 md:text-lg"
             >
-              Explore Softwares <FaArrowRight />
+              Get Started <FaArrowRight />
             </Link>
           </button>
           {/* <button className="w-[90%] sm:w-auto">
